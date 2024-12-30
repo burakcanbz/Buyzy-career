@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Mikado';
+  src: url('./fonts/mikadoBold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  /* font-family: 'Mikado', sans-serif; */
+  font-family: 'Satoshi', sans-serif;
+  font-weight: semibold;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}

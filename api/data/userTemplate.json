@@ -1,0 +1,76 @@
+{
+    "users": [
+      {
+        "_id": "1",
+        "name": "Burak Canbaz",
+        "email": "burak@gmail.com",
+        "password": "123",
+        "type": "Admin",
+        "role": "Owner",
+        "division": [
+          "All Divisions"
+        ]
+      },
+      {
+        "_id": "2",
+        "name": "Jane",
+        "email": "jane@gmail.com",
+        "password": "123",
+        "type": "Admin",
+        "role": "Editor",
+        "division": [
+          "Engineering",
+          "Art",
+          "People"
+        ]
+      },
+      {
+        "_id": "3",
+        "name": "John Verdon",
+        "email": "verdon@gmail.com",
+        "password": "123",
+        "type": "Admin",
+        "role": "Viewer",
+        "division": [
+          "Engineering",
+          "Customer Support"
+        ]
+      },
+      {
+        "_id": "4",
+        "name": "Adam Fawer",
+        "email": "adam@gmail.com",
+        "password": "123",
+        "type": "Admin",
+        "role": "Viewer",
+        "division": [
+          "People",
+          "Engineering"
+        ]
+      },
+      {
+        "_id": "5",
+        "name": "Michael Jordan",
+        "email": "jordan23@gmail.com",
+        "password": "123",
+        "type": "Admin",
+        "role": "Editor",
+        "division": [
+          "Engineering",
+          "Customer Support"
+        ]
+      },
+      {
+        "_id": "6",
+        "name": "Larry Bird",
+        "email": "bird@gmail.com",
+        "password": "123",
+        "type": "Admin",
+        "role": "Editor",
+        "division": [
+          "Engineering",
+          "Customer Support"
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,60 @@
+{
+  "feedbacks": [
+    {
+      "status": "positive",
+      "message": "This is some positive text.",
+      "from": "burak@gmail.com",
+      "applicationId": "6",
+      "id": 1
+    },
+    {
+      "status": "positive",
+      "message": "This is some positive text.",
+      "from": "burak@gmail.com",
+      "applicationId": "1",
+      "id": 2
+    },
+    {
+      "status": "positive",
+      "message": "This is some positive feedback.",
+      "from": "jane@gmail.com",
+      "applicationId": "6",
+      "id": 3
+    },
+    {
+      "status": "negative",
+      "message": "This is some negative feedback.",
+      "from": "jane@gmail.com",
+      "applicationId": "3",
+      "id": 4
+    },
+    {
+      "status": "positive",
+      "message": "",
+      "from": "burak@gmail.com",
+      "applicationId": "2",
+      "id": 5
+    },
+    {
+      "status": "negative",
+      "message": "It should be better.",
+      "from": "jordan23@gmail.com",
+      "applicationId": "6",
+      "id": 6
+    },
+    {
+      "status": "positive",
+      "message": "Feedback..",
+      "from": "burak@gmail.com",
+      "applicationId": "8",
+      "id": 7
+    },
+    {
+      "status": "negative",
+      "message": "Neg feedback..",
+      "from": "burak@gmail.com",
+      "applicationId": "5",
+      "id": 8
+    }
+  ]
+}

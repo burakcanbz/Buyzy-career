@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "_id": "1",
+      "name": "Burak Canbaz",
+      "email": "burak@gmail.com",
+      "password": "$2a$10$dPrCxUa9uCgab5wDDg7nv.K65ieTO8KNRfYosj/QNwWSo1oNlgjcK",
+      "type": "Admin",
+      "role": "Owner",
+      "division": 
+        "All Divisions"
+    },
+    {
+      "_id": "2",
+      "name": "Jane",
+      "email": "jane@gmail.com",
+      "password": "$2a$10$SidwZGRIn0IcF1qtJ2EdkuEYuh715nUaRuwe2SIHAXRCQB7QFslQS",
+      "type": "Admin",
+      "role": "Editor",
+      "division": [
+        "Engineering",
+        "Art",
+        "People"
+      ]
+    },
+    {
+      "_id": "3",
+      "name": "John Verdon",
+      "email": "verdon@gmail.com",
+      "password": "$2a$10$I/F.GC0rwfKb/BswxzFfuOoi.oXizJWpGMMw9GEmU/zktS69aSfNC",
+      "type": "Admin",
+      "role": "Viewer",
+      "division": [
+        "Engineering",
+        "Product"
+      ]
+    },
+    {
+      "_id": "4",
+      "name": "Adam Fawer",
+      "email": "adam@gmail.com",
+      "password": "$2a$10$2RI9jNf1RtJWSdBHKoC6s..EXcwwshd5Ly31iQ4sqSwxwZC3El22G",
+      "type": "Admin",
+      "role": "Viewer",
+      "division": [
+        "People",
+        "Engineering"
+      ]
+    },
+    {
+      "_id": "5",
+      "name": "Michael Jordan",
+      "email": "jordan23@gmail.com",
+      "password": "$2a$10$C8L5rO9v.G0HXFP4BCIA5.8cQpcXJJU.eQzR4xNch5WdmS3XA7oNW",
+      "type": "Admin",
+      "role": "Editor",
+      "division": [
+        "Engineering",
+        "Customer Support",
+        "Data Science"
+      ]
+    },
+    {
+      "_id": "6",
+      "name": "Larry Bird",
+      "email": "bird@gmail.com",
+      "password": "$2a$10$Qz4bquUWBzleSslquzYJ9ewepQ36Udh29EShEj.scVXrwE9nsFfAi",
+      "type": "Admin",
+      "role": "Editor",
+      "division": [
+        "Marketing",
+        "Workplace"
+      ]
+    }
+  ]
+}
