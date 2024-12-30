@@ -9,6 +9,7 @@ const ApplicationCard = ({ index, item, pathname, userInfo, name }) => {
   const navigate = useNavigate();
   const itemInfo = item[0]
   const { filterQuery, nameQuery } = getQueryParamNames(name, itemInfo);
+  const isHired = item.some(i => i.hireStatus === "hired");
 
   return (
     <motion.div
@@ -76,7 +77,7 @@ const ApplicationCard = ({ index, item, pathname, userInfo, name }) => {
               className="mt-2"
             >
               <strong className="fs-6">Status:</strong>{" "}
-              <span className="fw-bold text-black fs-6"> (Hired or not)</span>
+              <span className="fw-bold text-black fs-6">{isHired ? <span className="text-success">Hired</span> : <span className="text-danger">Not Hired</span>}</span>
             </Typography>
             <Typography
               component="div"

@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 import { getQueryParams } from "../../../helpers/helper";
 import Loading from "../../../components/utils/Loading";
 import Message from "../../../components/utils/Message";
+import { useGetFeedbacksQuery } from "../../../slices/feedbackApiSlice";
 
 const ApplicationDetails = () => {
 
@@ -78,7 +79,7 @@ const ApplicationDetails = () => {
                           sx={{ color: "text.secondary" }}
                           className="mt-2"
                         >
-                          <strong>Feedback Count:</strong> <span className="fw-bold text-black">Count</span>
+                          <strong>Status:</strong> <span className="fw-bold text-black">{item.hireStatus === "hired" ? <span className="text-success">Hired</span> : <span className="text-danger">Not Hired</span>}</span>
                         </Typography>
                       </CardContent>
                       { userInfo.role !== 'Viewer' && (
