@@ -140,8 +140,8 @@
       "id": 6
     },
     {
-      "name": "a",
-      "email": "j@gmail.com",
+      "name": "Unknown",
+      "email": "unknown@gmail.com",
       "phone": "+90",
       "location": "",
       "company": "",
@@ -232,6 +232,30 @@
         "image": "/images/recruitment.png"
       },
       "id": 10
+    },
+    {
+      "name": "Data Scientist",
+      "email": "data@gmail.com",
+      "phone": "+905068884769",
+      "location": "New Jersey, ABD",
+      "company": "Microsoft",
+      "message": "Some text...",
+      "hireStatus": "",
+      "files": [
+        "Dream Games_Frontend Engineering_Case Study.pdf"
+      ],
+      "links": [],
+      "position": {
+        "id": 35,
+        "title": "Data Scientist",
+        "summary": "We are looking for an experienced Data Scientist to develop analytical insights for our teams. As a Data Scientist, you will work closely with marketing and product teams to identify their needs and translate them into structured analysis, actionable insights, and data products.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
+        "division": "Data Science",
+        "location": "Istanbul",
+        "requirements": "",
+        "responsibilities": "",
+        "image": "/images/data-scientist.png"
+      },
+      "id": 11
     }
   ]
 }

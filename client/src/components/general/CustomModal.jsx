@@ -35,7 +35,7 @@ const CustomModal = ({
                 marginRight: 1,
               }}
             >
-             {icon &&  {icon} }
+             {icon && icon}
               {title}
             </Typography>
           </Box>
@@ -44,7 +44,7 @@ const CustomModal = ({
       <Modal.Body>
         <Typography
           variant="body1"
-          sx={{ fontSize: 16, color: "#333", lineHeight: 1.6, fontWeight: 550 }}
+          sx={{ fontSize: 16, color: "#333", lineHeight: 1.6, fontWeight: 550, padding: 2 }}
         >
           {bodyContent}
         </Typography>
