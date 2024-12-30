@@ -78,6 +78,12 @@ npm start
 5. You can add any user data with the correct form to userTemplate.json file and populate them to users.json file using seeder.js fil.
 ---
 
+## Admin Panel Features
+- Admin users can be directed to the login page of Dream Admin Panel to access the application with http://localhost:5000/dream-admin-panel path.
+- Only users with **admin accounts** can access the application.  
+- Role-based access control to ensure security.  
+- Unauthorized access is strictly prevented.  
+
 ## Running the Application
 
 1. **Development Mode**:
@@ -114,4 +120,5 @@ Feel free to fork the repository, make changes, and submit pull requests.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
+
 
