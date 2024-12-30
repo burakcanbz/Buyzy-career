@@ -1,4 +1,4 @@
-# Full-Stack Project: Overview and Setup
+# Dream Games Case Study: Overview and Setup
 
 This project is a simple full-stack application consisting of a **Node.js** backend and a **React** frontend. The backend handles API requests and filesystem interactions, while the frontend provides a user-friendly interface for interacting with the application.
 
