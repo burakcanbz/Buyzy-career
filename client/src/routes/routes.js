@@ -20,7 +20,7 @@ const router = createBrowserRouter(
       <Route path="/open-positions" element={<OpenPositions />} />
       <Route path="/open-positions/:id/:name" element={<OpenPositionDetails />} />
       <Route path="/:id/apply" element={<Apply />} />
-      <Route path="/dream-admin-panel" element={<Login />} />
+      <Route path="/admin-panel" element={<Login />} />
       <Route path="/*" element={<NotFound />} />
 
       <Route path="" element={<PrivateRoute />}>

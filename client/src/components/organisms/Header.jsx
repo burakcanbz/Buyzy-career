@@ -173,7 +173,7 @@ const Header = () => {
                   onMouseLeave={() => handleShow(null)}
                   onClick={() => handleShow("admin")}
                   show={openDropdown === "admin"}
-                  title={<span style={{ color: "black", fontSize: 20, fontWeight: "bold" }}>ADMIN</span>}
+                  title={<span style={{ color: "white", fontSize: 20, fontWeight: "bold" }}>ADMIN</span>}
                   id="collapsible-nav-dropdown"
                 >
                   <NavDropdown.Item
@@ -196,7 +196,7 @@ const Header = () => {
                 <NavDropdown
                   className="my-dropdown me-3 toggle-none"
                   onClick={handleLogout}
-                  title={<span style={{ color: "black", fontSize: 20, fontWeight: "bold" }}>LOGOUT</span>}
+                  title={<span style={{ color: "white", fontSize: 20, fontWeight: "bold" }}>LOGOUT</span>}
                 />
               </>
             )}

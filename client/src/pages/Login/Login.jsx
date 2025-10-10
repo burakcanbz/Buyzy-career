@@ -44,12 +44,7 @@ const Login = () => {
         <Col md={3}>
           <Card
             className="border-0 my-5 p-3 rounded shadow-lg d-flex justify-content-center align-items-center"
-            style={{ minHeight: 500, 
-                backgroundImage: `url(${dreamImage})`,
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center"
-                 }}>
+            style={{ minHeight: 500 }}>
             <span className="fs-4 fw-bold text-muted">Admin Panel</span>
             <BiLogIn style={{ fontSize: 64, marginTop: 10, marginBottom: 4 }} />
             <h1 className="fw-bold">Sign In</h1>
