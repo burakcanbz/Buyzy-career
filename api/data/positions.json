@@ -2,68 +2,38 @@
   "openPositions": [
     {
       "id": 1,
-      "title": "Product & Marketing Career Days 2025",
-      "summary": "You’re invited to Dream Games Career Days!\r\n\r\nIf you are a 4th-year university student, take your first step into the mobile gaming industry. Join our event for an opportunity to learn from our engineering teams and gain valuable insights into the game development process. In this event, you will also get some hands-on experience and explore our new grad positions.\r\n\r\nThis event will be held on 1st March at Four Seasons Hotel Bosphorus. We are pleased to host with accommodation and arrange travel for those joining us from outside Istanbul.\r\n\r\nFill out the application form and ensure that you complete your application by the 3rd of January.",
-      "division": "Career Days",
+      "title": "Product Specialist",
+      "summary": "We are seeking a Product Manager to define product vision, prioritize features, and lead cross-functional teams to deliver impactful solutions. Responsibilities include gathering feedback, analyzing market trends, and guiding development to ensure alignment with business goals. Strong analytical, problem-solving, and communication skills are essential.\nThis role also requires stakeholder management, data-driven decision-making, and the ability to balance short-term priorities with long-term strategy. You will have the opportunity to shape product direction, drive innovation, and make a significant impact on the company’s success.",
+      "division": "Product",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
-      "image": "/images/career-days.png"
+      "image": "/images/product.png"
     },
     {
       "id": 2,
-      "title": "Software Engineering Career Days 2025",
-      "summary": "You’re invited to Dream Games Career Days!\n\nIf you are a 4th-year university student, take your first step into the mobile gaming industry. Join our event for an opportunity to learn from our engineering teams and gain valuable insights into the game development process. In this event, you will also get some hands-on experience and explore our new grad positions.\n\nThis event will be held on 1st March at Four Seasons Hotel Bosphorus. We are pleased to host with accommodation and arrange travel for those joining us from outside Istanbul.\n\nFill out the application form and ensure that you complete your application by the 3rd of January.",
-      "division": "Career Days",
+      "title": "Product Specialist",
+      "summary": "We are seeking a Product Manager to define product vision, prioritize features, and lead cross-functional teams to deliver impactful solutions. Responsibilities include gathering feedback, analyzing market trends, and guiding development to ensure alignment with business goals. Strong analytical, problem-solving, and communication skills are essential.\nThis role also requires stakeholder management, data-driven decision-making, and the ability to balance short-term priorities with long-term strategy. You will have the opportunity to shape product direction, drive innovation, and make a significant impact on the company’s success.",
+      "division": "Product",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
-      "image": "/images/career-days.png"
+      "image": "/images/product.png"
     },
     {
       "id": 3,
-      "title": "Human Resources Career Days 2025",
-      "summary": "You’re invited to Dream Games Career Days!\n\nIf you are a 4th-year university student, take your first step into the mobile gaming industry. Join our event for an opportunity to learn from our engineering teams and gain valuable insights into the game development process. In this event, you will also get some hands-on experience and explore our new grad positions.\n\nThis event will be held on 1st March at Four Seasons Hotel Bosphorus. We are pleased to host with accommodation and arrange travel for those joining us from outside Istanbul.\n\nFill out the application form and ensure that you complete your application by the 3rd of January.",
-      "division": "Career Days",
+      "title": "Product Specialist (Part-time)",
+      "summary": "We are seeking a Product Manager to define product vision, prioritize features, and lead cross-functional teams to deliver impactful solutions. Responsibilities include gathering feedback, analyzing market trends, and guiding development to ensure alignment with business goals. Strong analytical, problem-solving, and communication skills are essential.\nThis role also requires stakeholder management, data-driven decision-making, and the ability to balance short-term priorities with long-term strategy. You will have the opportunity to shape product direction, drive innovation, and make a significant impact on the company’s success.",
+      "division": "Product",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
-      "image": "/images/career-days.png"
+      "image": "/images/product.png"
     },
     {
       "id": 4,
-      "title": "Product Specialist",
-      "summary": "We are looking for a passionate Product Specialist to join our team. As a Product Specialist, you will ensure the game's success and growth by contributing to developing the product roadmap. In the studio, you will work closely with engineers and artists to create games that will be played by millions of people all around the world.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "Product",
-      "location": "Istanbul",
-      "requirements": "",
-      "responsibilities": "",
-      "image": "/images/product.png"
-    },
-    {
-      "id": 5,
-      "title": "Product Specialist (New Grad)",
-      "summary": "We are looking for a passionate new grad to join our team as a Product Specialist. As a Product Specialist, you will ensure the game's success and growth by contributing to developing the product roadmap. In the studio, you will work closely with engineers and artists to create games that will be played by millions of people all around the world.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "Product",
-      "location": "Istanbul",
-      "requirements": "",
-      "responsibilities": "",
-      "image": "/images/product.png"
-    },
-    {
-      "id": 6,
-      "title": "Product Specialist (Part-time)",
-      "summary": "We are looking for a passionate part-time Product Specialist to join our team. As a Product Specialist, you will ensure the game's success and growth by contributing to developing the product roadmap. In the studio, you will work closely with engineers and artists to create games that will be played by millions of people all around the world.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "Product",
-      "location": "Istanbul",
-      "requirements": "",
-      "responsibilities": "",
-      "image": "/images/product.png"
-    },
-    {
-      "id": 7,
-      "title": "Game Developer",
-      "summary": "We are looking for a passionate Game Developer to join our team. You will contribute to all areas of game development, including programming of graphics, game logic, and user interface using Unity. You will work effectively as part of a multi-disciplinary team of developers, artists, and game designers to create games that will be played by millions of people all around the world.\r\n\r\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
+      "title": "Frontend Developer",
+      "summary": "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
       "division": "Engineering",
       "location": "Istanbul",
       "requirements": "Some reqs",
@@ -71,9 +41,39 @@
       "image": "/images/engineer.png"
     },
     {
+      "id": 5,
+      "title": "Backend Engineer",
+      "summary": "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
+      "division": "Engineering",
+      "location": "Istanbul",
+      "requirements": "",
+      "responsibilities": "",
+      "image": "/images/engineer.png"
+    },
+    {
+      "id": 6,
+      "title": "Backend Engineer (New Grad)",
+      "summary": "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
+      "division": "Engineering",
+      "location": "Istanbul",
+      "requirements": "",
+      "responsibilities": "",
+      "image": "/images/engineer.png"
+    },
+    {
+      "id": 7,
+      "title": "Frontend Developer (Part-time)",
+      "summary": "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
+      "division": "Engineering",
+      "location": "Istanbul",
+      "requirements": "",
+      "responsibilities": "",
+      "image": "/images/engineer.png"
+    },
+    {
       "id": 8,
-      "title": "Senior Software Engineer",
-      "summary": "We are looking for an experienced Senior Software Engineer to join our team. You will contribute to all areas of game development, including programming of graphics, game logic, and user interface using Unity. It is not required to have prior game development experience since we believe a competent software engineer can develop great things in any field. You will work effectively as part of a multi-disciplinary team of engineers, artists and game designers to create games that will be played by millions of people all around the world.\r\n\r\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
+      "title": "Full Stack Developer",
+      "summary": "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
       "division": "Engineering",
       "location": "Istanbul",
       "requirements": "",
@@ -82,8 +82,8 @@
     },
     {
       "id": 9,
-      "title": "Software Engineer",
-      "summary": "We are looking for a passionate Software Engineer to join our team. You will contribute to all areas of game development, including programming of graphics, game logic, and user interface using Unity. It is not required to have prior game development experience since we believe a competent software engineer can develop great things in any field. You will work effectively as part of a multi-disciplinary team of engineers, artists, and game designers to create games that will be played by millions of people all around the world.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
+      "title": "Senior Backend Engineer",
+      "summary": "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
       "division": "Engineering",
       "location": "Istanbul",
       "requirements": "",
@@ -92,8 +92,8 @@
     },
     {
       "id": 10,
-      "title": "Software Engineer (New Grad)",
-      "summary": "We are looking for a passionate new grad to join our team as a Software Engineer. This is an exciting opportunity to contribute to all areas of game development, including programming graphics, game logic, and user interface using Unity. It is not required to have prior game development experience since we believe a competent software engineer can develop great things in any field. You will work effectively as part of a multi-disciplinary team of engineers, artists, and game designers to create games that will be played by millions of people all around the world.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
+      "title": "Software Engineer",
+      "summary": "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
       "division": "Engineering",
       "location": "Istanbul",
       "requirements": "",
@@ -102,8 +102,8 @@
     },
     {
       "id": 11,
-      "title": "Software Engineer (Part-time)",
-      "summary": "We are looking for a passionate part-time Software Engineer to join our team. This is an exciting opportunity to contribute to all areas of game development, including programming of graphics, game logic and user interface using Unity. It is not required to have prior game development experience since we believe a competent software engineer can develop great things in any field. You will work effectively as part of a multi-disciplinary team of engineers, artists and game designers to create games that will be played by millions of people all around the world.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
+      "title": "Backend Engineer (Part-time)",
+      "summary": "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
       "division": "Engineering",
       "location": "Istanbul",
       "requirements": "",
@@ -112,8 +112,8 @@
     },
     {
       "id": 12,
-      "title": "Software Engineer, Tools",
-      "summary": "We are looking for a Software Engineer to join our tools engineering team. You will make architectural decisions and do hands-on development to create tools and infrastructure for more reliable, faster, and fun games. You will work closely with a multi-disciplinary team of engineers, artists, and game designers to help create games that millions of people worldwide will play.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
+      "title": "DevOps Engineer",
+      "summary": "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
       "division": "Engineering",
       "location": "Istanbul",
       "requirements": "",
@@ -122,8 +122,8 @@
     },
     {
       "id": 13,
-      "title": "Senior Backend Engineer",
-      "summary": "We are looking for a Senior Backend Engineer to join our team. As a Senior Backend Engineer, you will be responsible for designing, developing, deploying the large-scale backend architecture of mobile games. In this role, by working with TechOps, you will develop highly scalable technologies that allow millions of users to play our games. You will also work closely with the game development team to do what’s best for the games.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
+      "title": "DevOps Engineer (Part-time)",
+      "summary": "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
       "division": "Engineering",
       "location": "Istanbul",
       "requirements": "",
@@ -132,8 +132,8 @@
     },
     {
       "id": 14,
-      "title": "Backend Engineer",
-      "summary": "We are looking for a Backend Engineer to join our team. As a Backend Engineer, you will be responsible for designing, developing, deploying the large-scale backend architecture of mobile games. In this role, by working with TechOps, you will develop highly scalable technologies that allow millions of users to play our games. You will also work closely with the game development team to do what’s best for the games.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
+      "title": "Security Engineer",
+      "summary": "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
       "division": "Engineering",
       "location": "Istanbul",
       "requirements": "",
@@ -142,79 +142,79 @@
     },
     {
       "id": 15,
-      "title": "Software Engineer, Performance Marketing",
-      "summary": "We are looking for an experienced Software Engineer to join our performance marketing team. As a Software Engineer, you will modify and iterate on the gameplay to create playable ads. You will need to be creative to make games as attractive as possible for the advertising campaigns and take on considerable ownership and responsibility. You will work closely with marketing managers and artists to create playable ads that millions of people will play worldwide.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "Engineering",
+      "title": "Senior IT Specialist",
+      "summary": "We are seeking a proactive Recruitment Specialist to manage the full hiring lifecycle, including sourcing, interviewing, and onboarding top talent. You will ensure that candidates align with our company values and culture while supporting hiring managers across departments. Strong communication, organizational skills, and experience with applicant tracking systems are essential.\nIn this role, you will also assist in employer branding and analyze recruitment metrics to improve processes. You should thrive in a fast-paced environment, collaborate across teams, and contribute to building a strong, engaged workforce. This position provides the chance to directly impact company growth and advance your HR career.",
+      "division": "IT",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
-      "image": "/images/engineer.png"
+      "image": "/images/recruitment.png"
     },
     {
       "id": 16,
-      "title": "Backend Engineer (New Grad)",
-      "summary": "We are looking for a passionate new grad to join our team as a Backend Engineer. This is an exciting opportunity to be responsible for designing, developing, and deploying the large-scale backend architecture of mobile games. In this role, by working with TechOps, you will develop highly scalable technologies that allow millions of users to play our games. You will also work closely with the game development team to do what’s best for the games.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "Engineering",
+      "title": "Senior Recruitment Specialist",
+      "summary": "We are seeking a proactive Recruitment Specialist to manage the full hiring lifecycle, including sourcing, interviewing, and onboarding top talent. You will ensure that candidates align with our company values and culture while supporting hiring managers across departments. Strong communication, organizational skills, and experience with applicant tracking systems are essential.\nIn this role, you will also assist in employer branding and analyze recruitment metrics to improve processes. You should thrive in a fast-paced environment, collaborate across teams, and contribute to building a strong, engaged workforce. This position provides the chance to directly impact company growth and advance your HR career.",
+      "division": "Human Resources",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
-      "image": "/images/engineer.png"
+      "image": "/images/recruitment.png"
     },
     {
       "id": 17,
-      "title": "Backend Engineer (Part-time)",
-      "summary": "We are looking for a passionate part-time Backend Engineer to join our team. This is an exciting opportunity to be responsible for designing, developing, and deploying the large-scale backend architecture of mobile games. In this role, by working with TechOps, you will develop highly scalable technologies that allow millions of users to play our games. You will also work closely with the game development team to do what’s best for the games.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "Engineering",
+      "title": "Recruitment Specialist",
+      "summary": "We are seeking a proactive Recruitment Specialist to manage the full hiring lifecycle, including sourcing, interviewing, and onboarding top talent. You will ensure that candidates align with our company values and culture while supporting hiring managers across departments. Strong communication, organizational skills, and experience with applicant tracking systems are essential.\nIn this role, you will also assist in employer branding and analyze recruitment metrics to improve processes. You should thrive in a fast-paced environment, collaborate across teams, and contribute to building a strong, engaged workforce. This position provides the chance to directly impact company growth and advance your HR career.",
+      "division": "Human Resources",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
-      "image": "/images/engineer.png"
+      "image": "/images/recruitment.png"
     },
     {
       "id": 18,
-      "title": "Frontend Engineer, Tools",
-      "summary": "We are looking for a Frontend Engineer to join our tools engineering team. The tools team makes architectural decisions and does hands-on development to create tools and infrastructure for our games. You will be responsible for driving the development of more consistent and efficient user experiences for the created tools.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "Engineering",
+      "title": "Recruitment Specialist (Part-time)",
+      "summary": "We are seeking a proactive Recruitment Specialist to manage the full hiring lifecycle, including sourcing, interviewing, and onboarding top talent. You will ensure that candidates align with our company values and culture while supporting hiring managers across departments. Strong communication, organizational skills, and experience with applicant tracking systems are essential.\nIn this role, you will also assist in employer branding and analyze recruitment metrics to improve processes. You should thrive in a fast-paced environment, collaborate across teams, and contribute to building a strong, engaged workforce. This position provides the chance to directly impact company growth and advance your HR career.",
+      "division": "Human Resources",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
-      "image": "/images/engineer.png"
+      "image": "/images/recruitment.png"
     },
     {
       "id": 19,
-      "title": "SecOps Engineer",
-      "summary": "We are looking for a SecOps Engineer who will help build and manage security systems. As a SecOps Engineer, you will be responsible for implementing security solutions in various environments and artifacts.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "Engineering",
+      "title": "Executive Assistant",
+      "summary": "We are seeking a proactive Recruitment Specialist to manage the full hiring lifecycle, including sourcing, interviewing, and onboarding top talent. You will ensure that candidates align with our company values and culture while supporting hiring managers across departments. Strong communication, organizational skills, and experience with applicant tracking systems are essential.\nIn this role, you will also assist in employer branding and analyze recruitment metrics to improve processes. You should thrive in a fast-paced environment, collaborate across teams, and contribute to building a strong, engaged workforce. This position provides the chance to directly impact company growth and advance your HR career.",
+      "division": "Human Resources",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
-      "image": "/images/engineer.png"
+      "image": "/images/recruitment.png"
     },
     {
       "id": 20,
-      "title": "UI Designer",
-      "summary": "We are looking for a passionate UI Designer to join our team. As a UI designer, you will be responsible for designing the user interface of a new mobile game from scratch. You will work hands-on with developers, game designers, and artists to implement UI elements into the game that will be played by millions of people all around the world.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "Art",
+      "title": "Marketing Analytics Manager",
+      "summary": "We are seeking a detail-oriented Marketing Analytics Manager to lead our marketing data analysis efforts. You will be responsible for collecting, analyzing, and interpreting large datasets to drive marketing strategy and decision-making. Strong analytical skills, experience with data visualization tools, and a deep understanding of digital marketing metrics are essential.\nIn this role, you will collaborate with cross-functional teams to identify key performance indicators, develop dashboards, and provide actionable insights. You should thrive in a fast-paced environment, possess excellent communication skills, and be able to translate complex data into clear recommendations.\nThis position offers the opportunity to make a significant impact on our marketing initiatives and advance your career in data analytics.",
+      "division": "Marketing",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
-      "image": "/images/art.png"
+      "image": "/images/marketing.png"
     },
     {
       "id": 21,
-      "title": "UI Artist",
-      "summary": "We are looking for a passionate UI Artist to join our team. As a UI artist, you will be responsible for designing the user interface games from scratch. You will work closely with engineers, game designers, and artists to implement UI elements into the game that will be played by millions of people all around the world.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "Art",
+      "title": "Senior Marketing Analyst",
+      "summary": "We are seeking a detail-oriented Senior Marketing Analyst to drive our marketing data analysis efforts. You will be responsible for collecting, analyzing, and interpreting large datasets to inform marketing strategy and decision-making. Strong analytical skills, experience with data visualization tools, and a deep understanding of digital marketing metrics are essential.\nIn this role, you will collaborate with cross-functional teams to identify key performance indicators, develop dashboards, and provide actionable insights. You should thrive in a fast-paced environment, possess excellent communication skills, and be able to translate complex data into clear recommendations.\nThis position offers the opportunity to make a significant impact on our marketing initiatives and advance your career in data analytics.",
+      "division": "Marketing",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
-      "image": "/images/art.png"
+      "image": "/images/marketing.png"
     },
     {
       "id": 22,
-      "title": "Senior IT Specialist",
-      "summary": "We are looking for a Senior IT Specialist who will be the primary point of contact for all IT operations. You will have the opportunity to gain hands-on experience in providing comprehensive IT support, focusing on software and hardware assistance to end-users, troubleshooting technical issues, and ensuring smooth daily operations.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "Workplace",
+      "title": "Executive Assistant",
+      "summary": "We are seeking a proactive Executive Assistant to support our executive team and ensure smooth operations. You will be responsible for managing schedules, coordinating meetings, and handling communications. Strong organizational skills, attention to detail, and the ability to multitask are essential.\nIn this role, you will also assist in project management and contribute to process improvements. You should thrive in a fast-paced environment, possess excellent communication skills, and be able to maintain confidentiality. This position offers the opportunity to work closely with leadership and advance your career in administration.",
+      "division": "Administration",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
@@ -222,9 +222,9 @@
     },
     {
       "id": 23,
-      "title": "Senior Recruitment Specialist",
-      "summary": "We are looking for an experienced Senior Recruitment Specialist to support our teams on various needs and play a role in helping Dream Games continue to be a great place to work. As a Senior Recruitment Specialist, you will have the opportunity to make a real impact on our success and enable our growth by hiring excellent people.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "People",
+      "title": "Senior Customer Support Specialist",
+      "summary": "We are seeking a proactive Senior Customer Support Specialist to provide exceptional support to our clients and ensure their success with our products. You will be responsible for managing customer inquiries, troubleshooting issues, and collaborating with cross-functional teams to deliver solutions. Strong communication skills, empathy, and a customer-centric mindset are essential.\nIn this role, you will also analyze customer feedback and support metrics to identify areas for improvement. You should thrive in a fast-paced environment, possess excellent problem-solving skills, and be able to handle challenging situations with professionalism. This position offers the opportunity to make a significant impact on customer satisfaction and advance your career in customer support.",
+      "division": "Customer Support",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
@@ -232,9 +232,9 @@
     },
     {
       "id": 24,
-      "title": "Recruitment Specialist",
-      "summary": "We are looking for a Recruitment Specialist to support our teams on various needs and play a role in helping Dream Games continue to be a great place to work. As a Senior Recruitment Specialist, you will have the opportunity to make a real impact on our success and enable our growth by hiring excellent people.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "People",
+      "title": "Customer Support Specialist",
+      "summary": "We are seeking a proactive Customer Support Specialist to provide exceptional support to our clients and ensure their success with our products. You will be responsible for managing customer inquiries, troubleshooting issues, and collaborating with cross-functional teams to deliver solutions. Strong communication skills, empathy, and a customer-centric mindset are essential.\nIn this role, you will also analyze customer feedback and support metrics to identify areas for improvement. You should thrive in a fast-paced environment, possess excellent problem-solving skills, and be able to handle challenging situations with professionalism. This position offers the opportunity to make a significant impact on customer satisfaction and advance your career in customer support.",
+      "division": "Customer Support ",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
@@ -242,9 +242,9 @@
     },
     {
       "id": 25,
-      "title": "Recruitment Specialist (Part-time)",
-      "summary": "We are looking for a part-time recruitment Specialist to support our teams on various needs and play a role in helping Dream Games continue to be a great place to work. As a Senior Recruitment Specialist, you will have the opportunity to make a real impact on our success and enable our growth by hiring excellent people.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "People",
+      "title": "Community Specialist",
+      "summary": "We are seeking a proactive Community Specialist to engage with our user community and foster positive relationships. You will be responsible for managing community interactions, addressing user feedback, and collaborating with cross-functional teams to enhance the user experience. Strong communication skills, empathy, and a community-focused mindset are essential.\nIn this role, you will also analyze community engagement metrics to identify trends and areas for improvement. You should thrive in a fast-paced environment, possess excellent problem-solving skills, and be able to handle challenging situations with professionalism. This position offers the opportunity to make a significant impact on our community initiatives and advance your career in community management.",
+      "division": "Customer Support ",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
@@ -252,88 +252,8 @@
     },
     {
       "id": 26,
-      "title": "Executive Assistant",
-      "summary": "We are looking for an experienced Senior Recruitment Specialist to support our teams on various needs and play a role in helping Dream Games continue to be a great place to work. As a Senior Recruitment Specialist, you will have the opportunity to make a real impact on our success and enable our growth by hiring excellent people.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "People",
-      "location": "Istanbul",
-      "requirements": "",
-      "responsibilities": "",
-      "image": "/images/recruitment.png"
-    },
-    {
-      "id": 27,
-      "title": "Marketing Analytics Manager",
-      "summary": "We are looking for a Marketing Analytics Manager to join our team. As a Marketing Analytics Manager, you will play a crucial role in shaping our marketing strategies through data-driven insights and collaborating with cross-functional teams to provide insights to enhance user acquisition and the effectiveness of both performance and brand marketing campaigns.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "Marketing",
-      "location": "Istanbul",
-      "requirements": "",
-      "responsibilities": "",
-      "image": "/images/marketing.png"
-    },
-    {
-      "id": 28,
-      "title": "Senior Marketing Analyst",
-      "summary": "We are looking for a talented and collaborative Creative Manager to contribute to developing content across Royal Match and Royal Kingdom. As a Creative Manager, you will be responsible for creating, developing, and delivering inspiring advertising that ensures a regular pipeline of world-class content for the US and other tier-1 markets with one of the largest marketing budgets in the gaming industry. You should have the curiosity and humility to understand the context of current category success drivers while bringing your creativity and experience to the process. You will also work with the brand and performance marketing team to create innovative concepts and scripts for digital media and TV.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "Marketing",
-      "location": "Istanbul",
-      "requirements": "",
-      "responsibilities": "",
-      "image": "/images/marketing.png"
-    },
-    {
-      "id": 29,
-      "title": "Creative Manager",
-      "summary": "You’re invited to Dream Games Career Days!\n\nIf you are a 4th-year university student, take your first step into the mobile gaming industry. Join our event for an opportunity to learn from our engineering teams and gain valuable insights into the game development process. In this event, you will also get some hands-on experience and explore our new grad positions.\n\nThis event will be held on 1st March at Four Seasons Hotel Bosphorus. We are pleased to host with accommodation and arrange travel for those joining us from outside Istanbul.\n\nFill out the application form and ensure that you complete your application by the 3rd of January.",
-      "division": "Marketing",
-      "location": "London",
-      "requirements": "",
-      "responsibilities": "",
-      "image": "/images/marketing.png"
-    },
-    {
-      "id": 30,
-      "title": "Executive Assistant",
-      "summary": "We are looking for an Executive Assistant to support the CMO in organizing and coordinating his program.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "People",
-      "location": "London",
-      "requirements": "",
-      "responsibilities": "",
-      "image": "/images/recruitment.png"
-    },
-    {
-      "id": 31,
-      "title": "Senior Customer Support Specialist",
-      "summary": "We are looking for a Senior Customer Support Specialist who will support designing end-to-end customer experience and relevant teams according to user insights.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "Customer Support ",
-      "location": "Istanbul",
-      "requirements": "",
-      "responsibilities": "",
-      "image": "/images/customer-support.png"
-    },
-    {
-      "id": 32,
-      "title": "Customer Support Specialist",
-      "summary": "We are looking for a Customer Support Specialist who will support designing end-to-end customer experience and relevant teams according to user insights.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "Customer Support ",
-      "location": "Istanbul",
-      "requirements": "",
-      "responsibilities": "",
-      "image": "/images/marketing.png"
-    },
-    {
-      "id": 33,
-      "title": "Community Specialist",
-      "summary": "We are looking for a Community Specialist who will support designing end-to-end customer experience and relevant teams according to user insights.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
-      "division": "Customer Support ",
-      "location": "Istanbul",
-      "requirements": "",
-      "responsibilities": "",
-      "image": "/images/marketing.png"
-    },
-    {
-      "id": 34,
       "title": "Data Analyst",
-      "summary": "We are looking for a passionate Data Analyst to join our team. As a Data Analyst, you will be responsible for running analysis, visualizing data, and analyzing our day-to-day operations. You will also work closely with product, marketing, and engineering teams to define and operationalize key business metrics for our games.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for! ",
+      "summary": "We are seeking a detail-oriented Data Analyst to join our data team. You will be responsible for collecting, analyzing, and interpreting large datasets to drive business insights and decision-making. Strong analytical skills, experience with data visualization tools, and a solid understanding of statistical methods are essential.\nIn this role, you will collaborate with cross-functional teams to identify key metrics, develop reports, and provide actionable recommendations. You should thrive in a fast-paced environment, possess excellent communication skills, and be able to translate complex data into clear insights.\nThis position offers the opportunity to make a significant impact on our data initiatives and advance your career in data analytics.",
       "division": "Data Science",
       "location": "Istanbul",
       "requirements": "",
@@ -341,9 +261,9 @@
       "image": "/images/data-scientist.png"
     },
     {
-      "id": 35,
+      "id": 27,
       "title": "Data Scientist",
-      "summary": "We are looking for an experienced Data Scientist to develop analytical insights for our teams. As a Data Scientist, you will work closely with marketing and product teams to identify their needs and translate them into structured analysis, actionable insights, and data products.\n\nAt Dream Games, all team members have a genuine chance to contribute to the final product and have an impact on the company. If you want to be a team member of a fast-growing company, you might be the person we are looking for!",
+      "summary": "We are seeking a skilled Data Scientist to join our data team. You will be responsible for developing predictive models, conducting experiments, and providing insights to drive business decisions. Strong programming skills, experience with machine learning frameworks, and a solid understanding of statistical analysis are essential.\nIn this role, you will collaborate with cross-functional teams to identify opportunities for data-driven solutions and communicate your findings effectively. You should thrive in a fast-paced environment, possess excellent problem-solving skills, and be able to work with large datasets.\nThis position offers the opportunity to make a significant impact on our data initiatives and advance your career in data science.",
       "division": "Data Science",
       "location": "Istanbul",
       "requirements": "",

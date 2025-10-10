@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../slices/authSlice";
 import { useLogoutMutation } from "../../slices/authApiSlice";
 import { toast } from "react-toastify";
-import logo from "../../assets/dream-new.jpg";
+import logo from "../../assets/buyzy.png";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(0);
@@ -46,25 +46,26 @@ const Header = () => {
         className="d-flex fixed-top shadow-sm"
         collapseOnSelect
         style={{
-          backgroundColor: "rgba(240, 240, 240)",
+          backgroundColor: "#393D47",
           opacity: 0.96,
         }}
       >
         <Navbar.Brand
           name="home"
-          className="nav-brand d-flex align-items-start ms-5"
+          className="nav-brand d-flex align-items-center justify-content-center"
           onClick={() => handleClick("/")}
         >
           <img
             src={logo}
             alt="Logo"
             style={{
-              maxHeight: 70,
-              padding: 10,
-              marginRight: 10,
+              maxHeight: 80,
+              borderRadius: 50,
+              marginLeft: 100,
               cursor: "pointer",
             }}
           />
+            <h2 className="brand ms-3 my-2" style={{ cursor: "pointer"}}>Buyzy</h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
@@ -79,7 +80,7 @@ const Header = () => {
               onMouseLeave={() => handleShow(null)}
               onClick={() => handleShow("about")}
               show={openDropdown === "about"}
-              title={<span style={{ color: "black", fontSize: 20, fontWeight: "bold" }}>ABOUT US</span>}
+              title={<span style={{ color: "white", fontSize: 20, fontWeight: "bold" }}>ABOUT US</span>}
               id="collapsible-nav-dropdown"
             >
               <NavDropdown.Item
@@ -89,7 +90,7 @@ const Header = () => {
                   setIsActive(1); 
                 }}
               >
-                Offices
+                Office
               </NavDropdown.Item>
               <NavDropdown.Item
                 className={`my-dropdown-item ${isActive === 2 ? "active" : ""} mb-1`}
@@ -98,7 +99,7 @@ const Header = () => {
                   setIsActive(2); 
                   }}
               >
-                News
+                Announcements
               </NavDropdown.Item>
             </NavDropdown>
 
@@ -108,7 +109,7 @@ const Header = () => {
               onMouseLeave={() => handleShow(null)}
               onClick={() => handleShow("games")}
               show={openDropdown === "games"}
-              title={<span style={{ color: "black", fontSize: 20, fontWeight: "bold" }}>GAMES</span>}
+              title={<span style={{ color: "white", fontSize: 20, fontWeight: "bold" }}>NEWS</span>}
               id="collapsible-nav-dropdown"
             >
               <NavDropdown.Item
@@ -117,7 +118,7 @@ const Header = () => {
                   handleClick("/games/royal-match");
                   setIsActive(3)}}
               >
-                Royal Match
+                Talent Program
               </NavDropdown.Item>
               <NavDropdown.Item
                 className={`my-dropdown-item ${isActive === 4 ? "active" : ""}`}
@@ -125,7 +126,7 @@ const Header = () => {
                   handleClick("/games/royal-kingdom")
                   setIsActive(4)}}
               >
-                Royal Kingdom
+                Bootcamp
               </NavDropdown.Item>
             </NavDropdown>
 
@@ -135,7 +136,7 @@ const Header = () => {
               onMouseLeave={() => handleShow(null)}
               onClick={() => handleShow("careers")}
               show={openDropdown === "careers"}
-              title={<span style={{ color: "black", fontSize: 20, fontWeight: "bold" }}>CAREERS</span>}
+              title={<span style={{ color: "white", fontSize: 20, fontWeight: "bold" }}>CAREERS</span>}
               id="collapsible-nav-dropdown"
             >
               <NavDropdown.Item
@@ -144,7 +145,7 @@ const Header = () => {
                   handleClick("/life-at-dream")
                   setIsActive(5)}}
               >
-                Life at Dream
+                Life at Buyzy
               </NavDropdown.Item>
               <NavDropdown.Item
                 className={`my-dropdown-item ${isActive === 6 ? "active" : ""} mb-1`}
@@ -160,7 +161,7 @@ const Header = () => {
                   handleClick("/open-positions")
                   setIsActive(7)}}
               >
-                Open Positions
+                Jobs
               </NavDropdown.Item>
             </NavDropdown>
 

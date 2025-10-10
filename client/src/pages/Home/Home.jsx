@@ -1,13 +1,14 @@
 import React from "react";
-import homeImg from "../../assets/home.png";
+import homeImg from "../../assets/home.jpg";
 
 const Home = () => {
   return (
     <div>
       <img
         src={homeImg}
+        alt=""
         style={{
-          width: "99vw",
+          width: "100vw",
         }}
       />
     </div>

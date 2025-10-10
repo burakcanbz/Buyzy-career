@@ -15,7 +15,7 @@ const DashboardHeader = () => {
           > 
             <Carousel
               hover="pause"
-              className="d-flex justify-content-center align-items-center my-2 shadow-lg"
+              className="d-flex justify-content-center align-items-center shadow-lg"
               style={{
                 height: "500px",
                 border: "none",
@@ -47,9 +47,9 @@ const DashboardHeader = () => {
                         initial={{ y: "-100vh" }}
                         animate={{ y: "0vh" }}
                         transition={{ type: "spring", stiffness: 250, delay: 0.1 }}
-                        className="fw-bold" style={{ fontSize: "3.5rem"}}
+                        className="fw-bold" style={{ fontSize: "3.5rem", color: "white", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)" }}
                       >
-                         OPEN POSITIONS
+                         JOBS
                       </motion.h1>
 
                       </Carousel.Caption>

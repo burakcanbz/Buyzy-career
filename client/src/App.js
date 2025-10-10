@@ -29,7 +29,7 @@ const App = () => {
       >
         <Header />
         <main
-          style={{ flexGrow: 1, marginTop: 90 }}
+          style={{ flexGrow: 1, marginTop: 105 }}
         >
           <Outlet />
         </main>
