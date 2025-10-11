@@ -1,6 +1,6 @@
 # Buyzy Career
 
-This project is a simple full-stack application consisting of a **Node.js** backend and a **React** frontend. The backend handles API requests and filesystem interactions, while the frontend provides a user-friendly interface for interacting with the application.
+Buyzy Career is a modern career portal where candidates can explore job opportunities and easily submit their applications.
 
 ## Getting Started
 
