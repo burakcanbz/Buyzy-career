@@ -1,6 +1,9 @@
 # Buyzy Career
 
-Buyzy Career is a modern career portal where candidates can explore job opportunities and easily submit their applications.
+Buyzy Career is a modern career portal where candidates can explore job opportunities and easily submit their applications. Only **Careers - Jobs page and its related pages reachable**. Other pages just added for better view.
+
+## Features
+- 
 
 ## Getting Started
 
