@@ -7,7 +7,6 @@ import { useLoginMutation } from "../../slices/authApiSlice";
 import { setCredentials } from "../../slices/authSlice";
 import { toast } from "react-toastify";
 import Loading from "../../components/utils/Loading";
-import dreamImage from "../../assets/sign-in3.png";
 
 const Login = () => {
   const [email, setEmail] = useState("");

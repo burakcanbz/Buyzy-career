@@ -11,7 +11,7 @@ const PrivateRoute = () => {
       <Outlet />
     </main>
   ) : (
-    <Navigate to="/dream-admin-panel" replace />
+    <Navigate to="/admin-panel" replace />
   );
 };
 

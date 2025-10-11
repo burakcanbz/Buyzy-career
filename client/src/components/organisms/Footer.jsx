@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <footer
-      style={{ minHeight: 270, backgroundColor: "#393D47", width: "100vw" }}
+      style={{ minHeight: 270, backgroundColor: "#393D47", width: "100%" }}
     >
       <Container className="footer pt-5">
           <Row className="mt-5 pt-5">

@@ -20,7 +20,7 @@ const Header = () => {
       await logoutApiCall().unwrap(); // without unwrap the logoutApiCall returns redux action object, with it, it returns promise-like object
       dispatch(logout());
       toast.error(`${userInfo?.role} ${userInfo?.type} logged out`)
-      navigate("/dream-admin-panel");
+      navigate("/admin-panel");
     } catch (err) {
       throw new Error(err);
     }
@@ -52,20 +52,20 @@ const Header = () => {
       >
         <Navbar.Brand
           name="home"
-          className="nav-brand d-flex align-items-center justify-content-center"
+          className=" nav-brand d-flex align-items-center justify-content-center"
           onClick={() => handleClick("/")}
         >
           <img
             src={logo}
             alt="Logo"
+            className="ms-md-3 ms-3"
             style={{
               maxHeight: 80,
               borderRadius: 50,
-              marginLeft: 100,
               cursor: "pointer",
             }}
           />
-            <h2 className="brand ms-3 my-2" style={{ cursor: "pointer"}}>Buyzy</h2>
+            <h2 className="brand ms-md-3 ms-2 my-2" style={{ cursor: "pointer"}}>Buyzy</h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
@@ -142,7 +142,7 @@ const Header = () => {
               <NavDropdown.Item
                 className={`my-dropdown-item ${isActive === 5 ? "active" : ""} mb-1`}
                 onClick={() => { 
-                  handleClick("/life-at-dream")
+                  handleClick("/life-at-buyzy")
                   setIsActive(5)}}
               >
                 Life at Buyzy

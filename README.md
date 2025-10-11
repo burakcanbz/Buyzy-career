@@ -17,7 +17,7 @@ Ensure you have the following installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/burakcanbz/dream-case.git
+   git clone https://github.com/burakcanbz/Buyzy-career.git
    cd project
    ```
 
@@ -79,7 +79,7 @@ npm start
 ---
 
 ## Admin Panel Features
-- Admin users can be directed to the login page of Dream Admin Panel to access the application with http://localhost:5000/dream-admin-panel path.
+- Admin users can be directed to the login page of Admin Panel to access the application with http://localhost:5000/admin-panel path.
 - Only users with **admin accounts** can access the application.  
 - Role-based access control to ensure security.  
 - Unauthorized access is strictly prevented.  

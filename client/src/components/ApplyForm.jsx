@@ -89,13 +89,13 @@ const ApplyForm = ({ positionId, position }) => {
           childRef.current.handleShow();
         }
         setTimeout(() => {
-          navigate('/open-positions');
+          // navigate('/open-positions');
         }, 2000)
         setUpdated(false);
       } catch (error) {
         toast.error(error?.data?.message ||  "Unexpected error happened while sending application");
         setTimeout(() => {
-          navigate('/open-positions');
+          // navigate('/open-positions');
         }, 2000)
         setUpdated(false);
       }
