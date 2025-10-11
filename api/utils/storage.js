@@ -1,16 +1,31 @@
 const multer = require('multer');
+const path = require('path');
+const fs = require('fs');
 
 const storage = multer.diskStorage({
-    destination: function(req, file, cb) {
-      const { folder }  = req.query;
-      if (folder === "client") {
-        return cb(null, `./${folder}/public/images`)
-      }
-      return cb(null, "./api/public/images")
-    },
-    filename: function (req, file, cb) {
-      return cb(null, `${file.originalname}`)
+  destination: function (req, file, cb) {
+    const { folder } = req.query;
+    let destPath;
+
+    if (folder === "client") {
+      destPath = path.join(__dirname, "../../client/public/images");
+    } else {
+      destPath = path.join(__dirname, "../public/files");
     }
-  })
-  
-exports.upload = multer({storage,  limits: { fileSize: 1000 * 1024 * 1024 }})
+
+    // Eğer klasör yoksa oluştur
+    if (!fs.existsSync(destPath)) {
+      fs.mkdirSync(destPath, { recursive: true });
+    }
+
+    cb(null, destPath);
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname);
+  }
+});
+
+exports.upload = multer({
+  storage,
+  limits: { fileSize: 1000 * 1024 * 1024 }
+});

@@ -142,16 +142,6 @@
     },
     {
       "id": 15,
-      "title": "Senior IT Specialist",
-      "summary": "We are seeking a proactive Recruitment Specialist to manage the full hiring lifecycle, including sourcing, interviewing, and onboarding top talent. You will ensure that candidates align with our company values and culture while supporting hiring managers across departments. Strong communication, organizational skills, and experience with applicant tracking systems are essential.\nIn this role, you will also assist in employer branding and analyze recruitment metrics to improve processes. You should thrive in a fast-paced environment, collaborate across teams, and contribute to building a strong, engaged workforce. This position provides the chance to directly impact company growth and advance your HR career.",
-      "division": "IT",
-      "location": "Istanbul",
-      "requirements": "",
-      "responsibilities": "",
-      "image": "/images/recruitment.png"
-    },
-    {
-      "id": 16,
       "title": "Senior Recruitment Specialist",
       "summary": "We are seeking a proactive Recruitment Specialist to manage the full hiring lifecycle, including sourcing, interviewing, and onboarding top talent. You will ensure that candidates align with our company values and culture while supporting hiring managers across departments. Strong communication, organizational skills, and experience with applicant tracking systems are essential.\nIn this role, you will also assist in employer branding and analyze recruitment metrics to improve processes. You should thrive in a fast-paced environment, collaborate across teams, and contribute to building a strong, engaged workforce. This position provides the chance to directly impact company growth and advance your HR career.",
       "division": "Human Resources",
@@ -161,7 +151,7 @@
       "image": "/images/recruitment.png"
     },
     {
-      "id": 17,
+      "id": 16,
       "title": "Recruitment Specialist",
       "summary": "We are seeking a proactive Recruitment Specialist to manage the full hiring lifecycle, including sourcing, interviewing, and onboarding top talent. You will ensure that candidates align with our company values and culture while supporting hiring managers across departments. Strong communication, organizational skills, and experience with applicant tracking systems are essential.\nIn this role, you will also assist in employer branding and analyze recruitment metrics to improve processes. You should thrive in a fast-paced environment, collaborate across teams, and contribute to building a strong, engaged workforce. This position provides the chance to directly impact company growth and advance your HR career.",
       "division": "Human Resources",
@@ -171,7 +161,7 @@
       "image": "/images/recruitment.png"
     },
     {
-      "id": 18,
+      "id": 17,
       "title": "Recruitment Specialist (Part-time)",
       "summary": "We are seeking a proactive Recruitment Specialist to manage the full hiring lifecycle, including sourcing, interviewing, and onboarding top talent. You will ensure that candidates align with our company values and culture while supporting hiring managers across departments. Strong communication, organizational skills, and experience with applicant tracking systems are essential.\nIn this role, you will also assist in employer branding and analyze recruitment metrics to improve processes. You should thrive in a fast-paced environment, collaborate across teams, and contribute to building a strong, engaged workforce. This position provides the chance to directly impact company growth and advance your HR career.",
       "division": "Human Resources",
@@ -181,7 +171,7 @@
       "image": "/images/recruitment.png"
     },
     {
-      "id": 19,
+      "id": 18,
       "title": "Executive Assistant",
       "summary": "We are seeking a proactive Recruitment Specialist to manage the full hiring lifecycle, including sourcing, interviewing, and onboarding top talent. You will ensure that candidates align with our company values and culture while supporting hiring managers across departments. Strong communication, organizational skills, and experience with applicant tracking systems are essential.\nIn this role, you will also assist in employer branding and analyze recruitment metrics to improve processes. You should thrive in a fast-paced environment, collaborate across teams, and contribute to building a strong, engaged workforce. This position provides the chance to directly impact company growth and advance your HR career.",
       "division": "Human Resources",
@@ -191,7 +181,7 @@
       "image": "/images/recruitment.png"
     },
     {
-      "id": 20,
+      "id": 19,
       "title": "Marketing Analytics Manager",
       "summary": "We are seeking a detail-oriented Marketing Analytics Manager to lead our marketing data analysis efforts. You will be responsible for collecting, analyzing, and interpreting large datasets to drive marketing strategy and decision-making. Strong analytical skills, experience with data visualization tools, and a deep understanding of digital marketing metrics are essential.\nIn this role, you will collaborate with cross-functional teams to identify key performance indicators, develop dashboards, and provide actionable insights. You should thrive in a fast-paced environment, possess excellent communication skills, and be able to translate complex data into clear recommendations.\nThis position offers the opportunity to make a significant impact on our marketing initiatives and advance your career in data analytics.",
       "division": "Marketing",
@@ -201,7 +191,7 @@
       "image": "/images/marketing.png"
     },
     {
-      "id": 21,
+      "id": 20,
       "title": "Senior Marketing Analyst",
       "summary": "We are seeking a detail-oriented Senior Marketing Analyst to drive our marketing data analysis efforts. You will be responsible for collecting, analyzing, and interpreting large datasets to inform marketing strategy and decision-making. Strong analytical skills, experience with data visualization tools, and a deep understanding of digital marketing metrics are essential.\nIn this role, you will collaborate with cross-functional teams to identify key performance indicators, develop dashboards, and provide actionable insights. You should thrive in a fast-paced environment, possess excellent communication skills, and be able to translate complex data into clear recommendations.\nThis position offers the opportunity to make a significant impact on our marketing initiatives and advance your career in data analytics.",
       "division": "Marketing",
@@ -211,47 +201,37 @@
       "image": "/images/marketing.png"
     },
     {
-      "id": 22,
-      "title": "Executive Assistant",
-      "summary": "We are seeking a proactive Executive Assistant to support our executive team and ensure smooth operations. You will be responsible for managing schedules, coordinating meetings, and handling communications. Strong organizational skills, attention to detail, and the ability to multitask are essential.\nIn this role, you will also assist in project management and contribute to process improvements. You should thrive in a fast-paced environment, possess excellent communication skills, and be able to maintain confidentiality. This position offers the opportunity to work closely with leadership and advance your career in administration.",
-      "division": "Administration",
-      "location": "Istanbul",
-      "requirements": "",
-      "responsibilities": "",
-      "image": "/images/recruitment.png"
-    },
-    {
-      "id": 23,
+      "id": 21,
       "title": "Senior Customer Support Specialist",
       "summary": "We are seeking a proactive Senior Customer Support Specialist to provide exceptional support to our clients and ensure their success with our products. You will be responsible for managing customer inquiries, troubleshooting issues, and collaborating with cross-functional teams to deliver solutions. Strong communication skills, empathy, and a customer-centric mindset are essential.\nIn this role, you will also analyze customer feedback and support metrics to identify areas for improvement. You should thrive in a fast-paced environment, possess excellent problem-solving skills, and be able to handle challenging situations with professionalism. This position offers the opportunity to make a significant impact on customer satisfaction and advance your career in customer support.",
       "division": "Customer Support",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
-      "image": "/images/recruitment.png"
+      "image": "/images/customer-support.png"
     },
     {
-      "id": 24,
+      "id": 22,
       "title": "Customer Support Specialist",
       "summary": "We are seeking a proactive Customer Support Specialist to provide exceptional support to our clients and ensure their success with our products. You will be responsible for managing customer inquiries, troubleshooting issues, and collaborating with cross-functional teams to deliver solutions. Strong communication skills, empathy, and a customer-centric mindset are essential.\nIn this role, you will also analyze customer feedback and support metrics to identify areas for improvement. You should thrive in a fast-paced environment, possess excellent problem-solving skills, and be able to handle challenging situations with professionalism. This position offers the opportunity to make a significant impact on customer satisfaction and advance your career in customer support.",
       "division": "Customer Support ",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
-      "image": "/images/recruitment.png"
+      "image": "/images/customer-support.png"
     },
     {
-      "id": 25,
+      "id": 23,
       "title": "Community Specialist",
       "summary": "We are seeking a proactive Community Specialist to engage with our user community and foster positive relationships. You will be responsible for managing community interactions, addressing user feedback, and collaborating with cross-functional teams to enhance the user experience. Strong communication skills, empathy, and a community-focused mindset are essential.\nIn this role, you will also analyze community engagement metrics to identify trends and areas for improvement. You should thrive in a fast-paced environment, possess excellent problem-solving skills, and be able to handle challenging situations with professionalism. This position offers the opportunity to make a significant impact on our community initiatives and advance your career in community management.",
       "division": "Customer Support ",
       "location": "Istanbul",
       "requirements": "",
       "responsibilities": "",
-      "image": "/images/recruitment.png"
+      "image": "/images/customer-support.png"
     },
     {
-      "id": 26,
+      "id": 24,
       "title": "Data Analyst",
       "summary": "We are seeking a detail-oriented Data Analyst to join our data team. You will be responsible for collecting, analyzing, and interpreting large datasets to drive business insights and decision-making. Strong analytical skills, experience with data visualization tools, and a solid understanding of statistical methods are essential.\nIn this role, you will collaborate with cross-functional teams to identify key metrics, develop reports, and provide actionable recommendations. You should thrive in a fast-paced environment, possess excellent communication skills, and be able to translate complex data into clear insights.\nThis position offers the opportunity to make a significant impact on our data initiatives and advance your career in data analytics.",
       "division": "Data Science",
@@ -261,7 +241,7 @@
       "image": "/images/data-scientist.png"
     },
     {
-      "id": 27,
+      "id": 25,
       "title": "Data Scientist",
       "summary": "We are seeking a skilled Data Scientist to join our data team. You will be responsible for developing predictive models, conducting experiments, and providing insights to drive business decisions. Strong programming skills, experience with machine learning frameworks, and a solid understanding of statistical analysis are essential.\nIn this role, you will collaborate with cross-functional teams to identify opportunities for data-driven solutions and communicate your findings effectively. You should thrive in a fast-paced environment, possess excellent problem-solving skills, and be able to work with large datasets.\nThis position offers the opportunity to make a significant impact on our data initiatives and advance your career in data science.",
       "division": "Data Science",

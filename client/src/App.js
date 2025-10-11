@@ -10,7 +10,6 @@ import "./App.css";
 const theme = createTheme({
   typography: {
     fontFamily: "'Satoshi', sans-serif",
-    // fontFamily: "'Mikado', sans-serif",
   },
 });
 

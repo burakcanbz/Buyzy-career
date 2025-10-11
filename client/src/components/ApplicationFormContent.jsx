@@ -77,7 +77,7 @@ const ApplicationFormContent = ({ userInfo, id, appDetail, refetchFeed, refetchA
           <Form.Control
             name="name"
             type="name"
-            value={appDetail.name}
+            value={appDetail?.name}
             readOnly
           />
         </Form.Group>
@@ -88,7 +88,7 @@ const ApplicationFormContent = ({ userInfo, id, appDetail, refetchFeed, refetchA
           <Form.Control
             name="email"
             type="email"
-            value={appDetail.email}
+            value={appDetail?.email}
             readOnly
           />
         </Form.Group>
@@ -97,7 +97,7 @@ const ApplicationFormContent = ({ userInfo, id, appDetail, refetchFeed, refetchA
           <Form.Control
             name="phone"
             type="tel"
-            value={appDetail.phone}
+            value={appDetail?.phone}
             readOnly
           />
         </Form.Group>
@@ -105,11 +105,11 @@ const ApplicationFormContent = ({ userInfo, id, appDetail, refetchFeed, refetchA
           <Form.Label name="location" id="apply-form-label">
             &nbsp;Current Location
           </Form.Label>
-          <Form.Control name="location" value={appDetail.location} readOnly />
+          <Form.Control name="location" value={appDetail?.location} readOnly />
         </Form.Group>
         <Form.Group controlId="formBasicCompany">
           <Form.Label id="apply-form-label">&nbsp;Current Company</Form.Label>
-          <Form.Control name="company" value={appDetail.company} readOnly />
+          <Form.Control name="company" value={appDetail?.company} readOnly />
         </Form.Group>
         <Form.Group>
           <Form.Label id="apply-form-label" className="mt-4">&nbsp;Personal Files </Form.Label>
@@ -119,7 +119,7 @@ const ApplicationFormContent = ({ userInfo, id, appDetail, refetchFeed, refetchA
               </small>
           </Form.Text>
           <div style={{ height: 150 }} className="div-tag-span">
-            {appDetail?.files.map((item, index) => {
+            {appDetail?.files?.map((item, index) => {
               return (
                 <a
                   key={index}
@@ -148,7 +148,7 @@ const ApplicationFormContent = ({ userInfo, id, appDetail, refetchFeed, refetchA
               </small>
           </Form.Text>
             <div style={{ height: 150 }} className="div-tag-span">
-              {appDetail?.links.map((item, index) => {
+              {appDetail?.links?.map((item, index) => {
                 return (
                   <span
                     key={index}
@@ -166,7 +166,7 @@ const ApplicationFormContent = ({ userInfo, id, appDetail, refetchFeed, refetchA
             <Form.Control
               as="textarea"
               name="message"
-              value={appDetail.message}
+              value={appDetail?.message}
               readOnly
               rows={5}
               style={{ resize: "none", overflow: "auto" }}

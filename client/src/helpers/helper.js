@@ -4,8 +4,8 @@ import axios from "axios";
 export const getValues = (arr, key) => {
   const array = [];
   const _ = arr.filter((position) => {
-    if (!array.includes(position[`${key}`])) {
-      array.push(position[`${key}`]);
+    if (!array.includes(position[`${key}`].trim())) {
+      array.push(position[`${key}`].trim());
       return true;
     }
     return false;

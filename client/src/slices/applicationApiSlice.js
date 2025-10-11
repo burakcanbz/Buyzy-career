@@ -21,8 +21,7 @@ export const applicationApiSlice = apiSlice.injectEndpoints({
       }),
     }),
     postApplication: builder.mutation({
-      query: ({ formData }) => {
-        console.log(formData);
+      query: (formData) => {
         return {
           url: `${ADMIN_URL}/application-form`,
           method: "POST",

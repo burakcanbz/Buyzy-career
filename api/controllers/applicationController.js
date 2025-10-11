@@ -41,8 +41,8 @@ exports.getApplicationDetails = asyncHandler( async(req, res) => {
 
 exports.addApplicationForm = asyncHandler(async (req, res) => {
     const { name, email, phone, location, company, message, hireStatus } = req.body;
-    const position = JSON.parse(req.body.position);
     const files = JSON.parse(req.body.files);
+    const position = JSON.parse(req.body.position);
     const links = JSON.parse(req.body.links);
     const applicationFormData = { name, email, phone, location, company, message, hireStatus, files, links }
     const positionId = position.id;

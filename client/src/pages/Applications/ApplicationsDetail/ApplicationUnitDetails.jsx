@@ -44,7 +44,6 @@ const ApplicationUnitDetails = () => {
                 userInfo={userInfo}
                 id={id}
                 appDetail={appDetail}
-                feedbacksArr={feedbacksArr}
                 refetchFeed={refetchFeedbacks}
                 refetchApp={refetchApplicationDetails}
               />

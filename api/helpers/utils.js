@@ -105,7 +105,7 @@ const addFeedback = async (fileName, feedback) => {
 
 const filterApplications = (applications, divisions) => {
   try {
-    if (divisions === "All Divisions") {
+    if (divisions.includes("All Divisions")) {
       return applications;
     } else {
       const filteredApps = [];

@@ -78,5 +78,3 @@ const TagFiles = ({ handleFilesChange, warning, allowMultiple, name, isRequired 
 };
 
 export default TagFiles;
-
-

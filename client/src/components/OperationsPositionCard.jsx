@@ -12,6 +12,7 @@ import { ADMIN_URL, OPERATIONS_URL } from "../constants";
 import { useNavigate } from "react-router-dom";
 import { useDeletePositionMutation } from "../slices/positionApiSlice";
 import ConfirmationModal from "./utils/ConfirmationModal";
+import { toast } from "react-toastify";
 
 const OperationsPositionCard = ({ position, index, buttonName, refetch }) => {
   const [deletePosition] = useDeletePositionMutation();
@@ -32,10 +33,10 @@ const OperationsPositionCard = ({ position, index, buttonName, refetch }) => {
     try {
       await deletePosition({ id: selectedPositionId });
       refetch();
-      console.log("Position deleted successfully!");
+      toast.success("Position deleted successfully!");
       setModalShow(false);
     } catch (error) {
-      console.error("Error deleting position:", error);
+      toast.error("Error deleting position:", error);
     }
   };
 

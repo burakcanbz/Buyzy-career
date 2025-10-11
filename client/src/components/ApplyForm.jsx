@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, use } from "react";
 import { Form, Row } from "react-bootstrap";
 import { usePostApplicationMutation } from "../slices/applicationApiSlice";
 import { toast } from "react-toastify";
@@ -22,9 +22,8 @@ const ApplyForm = ({ positionId, position }) => {
     message: "",
     hireStatus: "",
   });
-  const [files, setFiles] = useState([]);
-  const [ postApplication ] = usePostApplicationMutation();
-
+  const [postApplication] = usePostApplicationMutation();
+  const [file ,setFile] = useState([]);
   const childRef = useRef();
 
   const handleChange = (e) => {
@@ -33,24 +32,24 @@ const ApplyForm = ({ positionId, position }) => {
 
     setApplication((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleFilesChange = (files) => {
-  const filesArray = Array.from(files);
-  const fileNames = filesArray.map(file => file.name);
+    const filesArray = Array.isArray(files) ? files : Array.from(files);
+    const fileNames = filesArray.map((file) => file.name);
     setApplication((prev) => ({
       ...prev,
-      files: fileNames,
+      files: filesArray,
     }));
-    setFiles((prevFiles) => [...prevFiles, ...filesArray]);
+    setFile(fileNames);
   };
 
   const handleLinksChange = (value) => {
     setApplication((prev) => ({
       ...prev,
-      links: value, 
+      links: value,
     }));
   };
 
@@ -76,27 +75,28 @@ const ApplyForm = ({ positionId, position }) => {
         formData.append("location", application.location);
         formData.append("company", application.company);
         formData.append("message", application.message);
+        formData.append("files", JSON.stringify(file));
         formData.append("hireStatus", application.hireStatus);
-        formData.append("files", JSON.stringify(application.files))
-        formData.append("links", JSON.stringify(application.links));
-        files.forEach((file) => {
-          formData.append("file", file); 
+        application.files.forEach((file) => {
+          formData.append("file", file);
         });
-        const resp = await postApplication({
-          formData
-        }).unwrap();
+        formData.append("links", JSON.stringify(application.links));
+        const resp = await postApplication(formData).unwrap();
         if (childRef.current) {
           childRef.current.handleShow();
         }
         setTimeout(() => {
           // navigate('/open-positions');
-        }, 2000)
+        }, 2000);
         setUpdated(false);
       } catch (error) {
-        toast.error(error?.data?.message ||  "Unexpected error happened while sending application");
+        toast.error(
+          error?.data?.message ||
+            "Unexpected error happened while sending application"
+        );
         setTimeout(() => {
           // navigate('/open-positions');
-        }, 2000)
+        }, 2000);
         setUpdated(false);
       }
     }
@@ -106,7 +106,7 @@ const ApplyForm = ({ positionId, position }) => {
     if (updated) {
       post();
     }
-  }, [updated]); 
+  }, [updated]);
 
   return (
     <Form
@@ -131,7 +131,13 @@ const ApplyForm = ({ positionId, position }) => {
         <Form.Label id="apply-form-label">
           &nbsp;Email<span style={{ color: "red" }}>&nbsp;*</span>
         </Form.Label>
-        <Form.Control name="email" type="email" placeholder="Enter your e-mail" onChange={handleChange} required />
+        <Form.Control
+          name="email"
+          type="email"
+          placeholder="Enter your e-mail"
+          onChange={handleChange}
+          required
+        />
         <Form.Text className="text-muted">
           <small>&nbsp;We'll never share your email with anyone else.</small>
         </Form.Text>
@@ -153,14 +159,30 @@ const ApplyForm = ({ positionId, position }) => {
         </Form.Text>
       </Form.Group>
       <Form.Group className="mb-4" controlId="formBasicLocation">
-        <Form.Label name="location" id="apply-form-label" >&nbsp;Current Location</Form.Label>
-        <Form.Control name="location" placeholder="Enter your current location" onChange={handleChange}/>
+        <Form.Label name="location" id="apply-form-label">
+          &nbsp;Current Location
+        </Form.Label>
+        <Form.Control
+          name="location"
+          placeholder="Enter your current location"
+          onChange={handleChange}
+        />
       </Form.Group>
       <Form.Group controlId="formBasicCompany">
         <Form.Label id="apply-form-label">&nbsp;Current Company</Form.Label>
-        <Form.Control name="company" placeholder="Enter your current company" onChange={handleChange} />
+        <Form.Control
+          name="company"
+          placeholder="Enter your current company"
+          onChange={handleChange}
+        />
       </Form.Group>
-      <TagFiles handleFilesChange={handleFilesChange} warning={"(You can add multiple files at once)"} allowMultiple={true} name={"Files"} isRequired={true}/>
+      <TagFiles
+        handleFilesChange={handleFilesChange}
+        warning={"(You can add multiple files at once)"}
+        allowMultiple={true}
+        name={"Files"}
+        isRequired={true}
+      />
       <br />
       <br />
       <Row className="mt-4 mb-4">

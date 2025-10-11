@@ -4,7 +4,7 @@ const fs = require("fs");
 const { admin } = require("../middleware/authMiddleware");
 
 const router = express.Router();
-const directoryPath = path.join(__dirname, "../public", "images");
+const directoryPath = path.join(__dirname, "../public", "files");
 
 router.route("/").get(admin(['Owner']), async (req, res) => {
   const { fileName } = req.query;
