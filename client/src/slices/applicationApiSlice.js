@@ -5,7 +5,6 @@ export const applicationApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     getApplications: builder.query({
       query: ({ id }) => {
-        console.log("Fetching applications for user id:", id);
         return {
         url: `${ADMIN_URL}${APP_URL}/${id}`,
       }},

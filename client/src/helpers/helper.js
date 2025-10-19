@@ -71,15 +71,13 @@ export const getFilteredItems = (data, searchingItem) => {
 export const groupedById = (apps) => {
   if (apps) {
     const applicationGroup = apps.reduce((acc, obj) => {
-      const id = String(obj.position.title);
-
-      if (!acc[obj.position.id]) {
+      const id = obj.position._id;
+      if (!acc[id]) {
         acc[id] = [];
       }
       acc[id].push(obj);
       return acc;
     }, {});
-
     return Object.values(applicationGroup);
   }
   return null;
