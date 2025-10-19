@@ -1,17 +1,13 @@
 const asyncHandler = require("express-async-handler");
-const { fileReader } = require("../helpers/utils");
-const { generateToken } = require("../utils/generateToken");
+const User = require("../model/userModel");
 const bcrypt = require("bcryptjs");
-const e = require("express");
+
+const { generateToken } = require("../utils/generateToken");
 
 exports.authUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
 
-  const data = await fileReader("users");
-
-  const user = data.users.find(
-    (user) => user.email.toLowerCase() === email.toLowerCase()
-  );
+  const user = await User.findOne({ email });
   if (user && (await bcrypt.compare(password, user.password))) {
     generateToken(res, user._id, user.role);
 

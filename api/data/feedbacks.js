@@ -57,4 +57,4 @@ const feedbacks = [
     }
   ]
 
-  mpdule.exports = { feedbacks };
+  module.exports = { feedbacks };

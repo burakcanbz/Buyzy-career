@@ -42,15 +42,13 @@ exports.openPositionPaginated = asyncHandler( async(req, res) => {
 exports.updatePosition = asyncHandler( async(req, res) => {
   const { id, title, summary, division, location, requirements, responsibilities, image } = req.body;
   const updatedPosition = { id: Number(id), title, summary, division, location, requirements, responsibilities, image};
-  await updatePosition(Number(id), 'positions', updatedPosition)
-  const info = await updateApplications('applications', updatedPosition, id);
-  return res.status(200).json(info);
+  await Position.findByIdAndUpdate(id, updatedPosition);
+  return res.status(200).json({ success: true, message: "Applications successfully updated." });
 })
 
 exports.deletePosition = asyncHandler( async(req, res) => {
   const { id } = req.params;
-  console.log(id);
-  await deletePosition("positions", id)
+  await Position.findByIdAndDelete(id);
   return res.json({})
 })
 
@@ -58,7 +56,7 @@ exports.addPosition = asyncHandler( async(req, res) => {
   const { title, summary, division, location, requirements, responsibilities } = req.body;
   const image = JSON.parse(req.body.image);
   const position = { title, summary, division, location, requirements, responsibilities, image};
-  await addPosition("positions", position)
+  await Position.create(position);
   return res.status(200).json({
     error: false,
     message: "Position saved successfully",
