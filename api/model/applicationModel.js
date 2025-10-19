@@ -6,13 +6,18 @@ const applicationSchema = new mongoose.Schema({
     phone: { type: String },
     location: { type: String },
     company: { type: String },
-    hireStatus: { type: String, enum: ['applied', 'interviewing', 'hired', 'rejected'], default: 'applied' },
+    hireStatus: { type: String, enum: ['applied', 'interviewing', 'hired', 'rejected', ''], default: 'applied' },
     files: { type: [String], default: [] },
     links: { type: [String], default: [] },
     position: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Position',
-        required: true
+        _id: { type: mongoose.Schema.Types.ObjectId, ref: 'Position', required: true },
+        title: { type: String, required: true },
+        summary: { type: String, required: true },
+        division: { type: String, required: true },
+        location: { type: String, required: true },
+        requirements: { type: String },
+        responsibilities: { type: String },
+        image : { type: String, required: true },
     }
 });
 

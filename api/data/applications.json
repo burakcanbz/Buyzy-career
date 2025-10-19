@@ -23,6 +23,33 @@
         "image": "/images/engineer.png"
       },
       "id": 1
+    },
+    {
+      "name": "Burak",
+      "email": "burak.canbaz.web@gmail.com",
+      "phone": "+905068884769",
+      "location": "Istanbul",
+      "company": "-",
+      "message": "Some Message.",
+      "hireStatus": "",
+      "files": [
+        "Burak Canbaz Resume.pdf"
+      ],
+      "links": [
+        "www.github.com/burakcanbz"
+      ],
+      "position": {
+        "_id": "68f4d95988ea93ef81bef160",
+        "title": "Product Specialist (Part-time)",
+        "summary": "We are seeking a Product Manager to define product vision, prioritize features, and lead cross-functional teams to deliver impactful solutions. Responsibilities include gathering feedback, analyzing market trends, and guiding development to ensure alignment with business goals. Strong analytical, problem-solving, and communication skills are essential.\nThis role also requires stakeholder management, data-driven decision-making, and the ability to balance short-term priorities with long-term strategy. You will have the opportunity to shape product direction, drive innovation, and make a significant impact on the company’s success.",
+        "division": "Product",
+        "location": "Istanbul",
+        "requirements": "",
+        "responsibilities": "",
+        "image": "/images/product.png",
+        "__v": 0
+      },
+      "id": 2
     }
   ]
 }

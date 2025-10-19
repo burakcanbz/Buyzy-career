@@ -9,9 +9,10 @@ import Message from "../../components/utils/Message";
 
 const Applications = () => {
   const { userInfo } = useSelector((state) => state.auth);
+  console.log("userInfo => ", userInfo);
   const { data, error, isLoading } = useGetApplicationsQuery({ id: userInfo._id});
   const apps = data?.applications;
-
+  console.log("applications data => ", apps);
   
   if (isLoading) {
     return <Loading />;
