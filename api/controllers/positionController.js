@@ -1,35 +1,36 @@
 const asyncHandler = require("express-async-handler");
+const Position = require("../model/positionModel");
 const { fileReader, addPosition, updatePosition, deletePosition, updateApplications } = require("../helpers/utils");
 
 exports.openPositions = asyncHandler(async (req, res) => {
-  const data = await fileReader("positions");
+  const data = await Position.find();
   return res.status(200).json({ data: data });
 });
 
 exports.openPositionDetail = asyncHandler(async (req, res) => {
   const id = req.params.id;
-  const data = await fileReader("positions");
-  const position = data.openPositions.find((item) => item.id === Number(id));
-  if(!position){
+  const position = await Position.findById(id);
+  if(! position){
     return res.status(404).json({ error: true, message: "Resource not found."})
   }
   return res.status(200).json({ position });
 });
 
 exports.openPositionPaginated = asyncHandler( async(req, res) => {
-    const { page, limit } = req.query
-    const data = await fileReader('positions');
-    const positions = data.openPositions;
-    const totalPages = positions.length !== 0 ? Math.ceil((positions.length / limit)) : null;
+    const page = Number(req.query.page) || 1;
+    const limit = Number(req.query.limit) || 18;
+    const skip = (page - 1) * limit;
+    const total = await Position.countDocuments();
+    const paginatedPositions = await Position.find()
+      .skip(skip)
+      .limit(limit)
+      .sort({ createdAt: -1 });
+    const totalPages = Math.ceil(total / limit);
 
-    if(!totalPages){
+    if(total === 0){
       res.status(404)
       throw new Error("Data not found");
     }
-
-    const startIndex = (page - 1) * limit;
-    const endIndex = startIndex + Number(limit);
-    const paginatedPositions = positions.slice(startIndex, endIndex);
 
     return res.status(200).json({
       currentPage: page,

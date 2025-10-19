@@ -1,0 +1,52 @@
+const users = [
+  {
+    name: "Burak Canbaz",
+    email: "burak@gmail.com",
+    password: "$2a$10$OvlY3lN1u.spYqr.GXVKJeqmn6Xql5O/z/eF5dsfI.G6wrLpZx/e.",
+    type: "Admin",
+    role: "Owner",
+    division: ["All Divisions"],
+  },
+  {
+    name: "Jane",
+    email: "jane@gmail.com",
+    password: "$2a$10$zyq2uhGhTs5lkf/MyAFr/e1uWpEMmFnc3ThvW7NuMoEQUrYAdtJuK",
+    type: "Admin",
+    role: "Editor",
+    division: ["Engineering", "Customer Support", "Recruitment"],
+  },
+  {
+    name: "John Verdon",
+    email: "verdon@gmail.com",
+    password: "$2a$10$Sh7HDNxA9utCUp.xb0B88uabDk0iLCwm5lzW7bxOLObMw2cKAimBm",
+    type: "Admin",
+    role: "Viewer",
+    division: ["Engineering", "Customer Support"],
+  },
+  {
+    name: "Adam Fawer",
+    email: "adam@gmail.com",
+    password: "$2a$10$ZlJolExbI7N4Je4a5iPg2e2RlHDPqRCv.XB.lYjqFQLHd43V.o6A6",
+    type: "Admin",
+    role: "Viewer",
+    division: ["People", "Engineering"],
+  },
+  {
+    name: "Michael Jordan",
+    email: "jordan23@gmail.com",
+    password: "$2a$10$sbjZ34e.VL2WANt0oFipr.A4Y.R2iBkmxsczWwD/lbLwzWadhOQpa",
+    type: "Admin",
+    role: "Editor",
+    division: ["Engineering", "Customer Support"],
+  },
+  {
+    name: "Larry Bird",
+    email: "bird@gmail.com",
+    password: "$2a$10$/hsOfBXwyG0IZWe4WW8KvO53YFkzd81ZbSL5kr/J/cGG333.u9izq",
+    type: "Admin",
+    role: "Editor",
+    division: ["Engineering", "Customer Support"],
+  },
+];
+
+module.exports = { users };

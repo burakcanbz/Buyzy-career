@@ -5,11 +5,13 @@ const { errorHandler } = require('./middleware/errorMiddleware.js');
 const cookieParser = require('cookie-parser');
 dotenv.config();
 
+const connectDB  = require("./config/db.js");
 const { positionRoutes } = require("./routes/positionRoutes.js");
 const { userRoutes } = require("./routes/userRoutes.js");
 const { applicationRoutes } = require("./routes/applicationRoutes.js");
 const { feedbackRoutes } = require("./routes/feedbacksRoutes.js");
 const { fileRoute } = require("./routes/fileRoute.js");
+
 
 const app = express();
 
@@ -31,4 +33,5 @@ app.use(errorHandler);
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
+  connectDB();
 });

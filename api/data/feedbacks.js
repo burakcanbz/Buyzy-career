@@ -1,5 +1,4 @@
-{
-  "feedbacks": [
+const feedbacks = [
     {
       "status": "positive",
       "message": "This is some positive text.",
@@ -57,4 +56,5 @@
       "id": 8
     }
   ]
-}
+
+  mpdule.exports = { feedbacks };
