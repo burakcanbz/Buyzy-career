@@ -7,13 +7,9 @@ const Position = require("../model/positionModel");
 
 exports.getApplications = asyncHandler(async (req, res) => {
   const { id } = req.params;
-  // const { users } = await fileReader("users");
-  // const { applications } = await fileReader("applications");
   const user = await User.findById(id);
   const applications = await Application.find();
-  console.log("user => ", user);
   const filteredApplications = filterApplications(applications, user?.division)
-  console.log("filteredApplications => ", filteredApplications);
   return res.status(200).json({applications: filteredApplications });
 });
 
@@ -66,7 +62,6 @@ exports.addApplicationForm = asyncHandler(async (req, res) => {
     const parsedPosition = JSON.parse(position);
     const parsedFiles = files ? JSON.parse(files) : [];
     const parsedLinks = links ? JSON.parse(links) : [];
-    console.log("parsedPosition => ", parsedPosition);
     const appPosition = await Position.findById(parsedPosition._id);
     if (!appPosition) {
       res.status(404);

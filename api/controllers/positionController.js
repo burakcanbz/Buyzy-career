@@ -52,11 +52,9 @@ exports.deletePosition = asyncHandler( async(req, res) => {
 })
 
 exports.addPosition = asyncHandler( async(req, res) => {
-  console.log("in")
   const { title, summary, division, location, requirements, responsibilities } = req.body;
   const image = JSON.parse(req.body.image);
   const position = { title, summary, division, location, requirements, responsibilities, image};
-  console.log("add position => ", position);
   await Position.create(position);
   return res.status(200).json({
     error: false,

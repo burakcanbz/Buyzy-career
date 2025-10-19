@@ -31,7 +31,8 @@ app.use("/feedback", feedbackRoutes)
 app.use(errorHandler);
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-  connectDB();
+connectDB().then(() => {
+    app.listen(port,() => {
+        process.env.NODE_ENV === 'development' && console.log(`Server running on port ${port}`)
+    })
 });

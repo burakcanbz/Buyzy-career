@@ -17,7 +17,7 @@ const PositionList = () => {
   const { searchedItems } = useSelector((state) => state.position);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  
+
   const openPositions = useMemo(() => {
     return data?.data || [];
   }, [data?.data]);

@@ -38,7 +38,7 @@ const ApplicationFormContent = ({ userInfo, id, appDetail, refetchFeed, refetchA
     try {
       if (isChecked) {
         const resp = await postFeedback({ feedback }).unwrap();
-        refetchFeed(id).then(data => console.log("in refetch => ", data));
+        refetchFeed(id).then();
         toast.success("Feedback sent successfully");
         setUpdated(false);
       } else {

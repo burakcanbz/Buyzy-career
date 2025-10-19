@@ -26,7 +26,7 @@ exports.authUser = asyncHandler(async (req, res) => {
 });
 
 exports.logoutUser = asyncHandler(async (req, res) => {
-  res.cookie("jwt", "", {
+  res.cookie("careerJwt", "", {
     httpOnly: true,
     expires: new Date(0),
   });

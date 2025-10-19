@@ -1,4 +1,4 @@
-import { ITEMS_PER_PAGE } from "../constants";
+import { BASE_URL, ITEMS_PER_PAGE } from "../constants";
 import axios from "axios";
 
 export const getValues = (arr, key) => {
@@ -71,7 +71,7 @@ export const getFilteredItems = (data, searchingItem) => {
 export const groupedById = (apps) => {
   if (apps) {
     const applicationGroup = apps.reduce((acc, obj) => {
-      const id = String(obj.position.id);
+      const id = String(obj.position.title);
 
       if (!acc[obj.position.id]) {
         acc[id] = [];
@@ -140,7 +140,7 @@ export const filesToBase64 = async (images) => {
 
 export const downloadFile = async (fileName) => {
   try {
-    const response = await axios.get("http://localhost:3000/file", {
+    const response = await axios.get(`${BASE_URL}/file`, {
       params: { fileName },
       withCredentials: true,
       responseType: 'blob'
