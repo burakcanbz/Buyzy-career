@@ -13,9 +13,21 @@ const ApplicationUnitDetails = () => {
   const { id } = useParams();
   const { userInfo } = useSelector((state) => state.auth);
   const navigate = useNavigate();
-  const { data: feedbacks, feedError, isFeedLoading, isFetching, refetch: refetchFeedbacks } = useGetFeedbacksQuery(id);
+  const {
+    data: feedbacks,
+    feedError,
+    isFeedLoading,
+    isFetching,
+    refetch: refetchFeedbacks,
+  } = useGetFeedbacksQuery(id);
+  console.log(feedbacks);
   const feedbacksArr = feedbacks?.feedbacks;
-  const { data, error, isLoading, refetch: refetchApplicationDetails } = useGetApplicationDetailQuery(id);
+  const {
+    data,
+    error,
+    isLoading,
+    refetch: refetchApplicationDetails,
+  } = useGetApplicationDetailQuery(id);
   const appDetail = data?.applicationDetail;
 
   useEffect(() => {
@@ -25,9 +37,17 @@ const ApplicationUnitDetails = () => {
     }
   }, [id, refetchApplicationDetails]);
 
-  if(isFetching) { return <div></div>}  // need to use refetch data from backend
+  if (isFetching) {
+    return <div></div>;
+  } // need to use refetch data from backend
 
-  if(error) { return <Message variant="danger">{error?.data?.message || "There is no application with that id"}</Message>}
+  if (error) {
+    return (
+      <Message variant="danger">
+        {error?.data?.message || "There is no application with that id"}
+      </Message>
+    );
+  }
 
   return (
     <SlidingPage animationClassName={"slide-top"}>
@@ -48,11 +68,13 @@ const ApplicationUnitDetails = () => {
                 refetchApp={refetchApplicationDetails}
               />
             </Col>
-            {feedbacksArr?.length > 0 && (
-              <Col md={3}>
+            {/* {feedbacksArr?.length > 0 && ( */}
+            <Col md={3}>
+              <div style={{ height: "97%", borderLeft: "2px solid #cec6c6ff", paddingLeft: 15 }}>
                 <GivenFeedbacks feedbacks={feedbacksArr} />
-              </Col>
-            )}
+              </div>
+            </Col>
+            {/* )} */}
           </Row>
         )}
       </Container>

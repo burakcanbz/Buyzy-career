@@ -5,10 +5,10 @@ import { IoMdClose, IoMdCheckmark } from "react-icons/io";
 
 const FeedbackCard = ({ item }) => {
   return (
-    <Card className="shadow-lg mb-4 border-1">
+    <Card className="shadow-lg mb-2 border-1">
       <Card.Body>
         <Row className="align-items-center">
-          <div className="d-flex justify-content-between align-items-center mb-1">
+          <div className="d-flex justify-content-between align-items-center">
             <div>
               <strong>Status:</strong>
               <span className={`ms-2 ${item.status === "positive" ? "text-success" : "text-danger"}`}>
@@ -22,7 +22,7 @@ const FeedbackCard = ({ item }) => {
             </div>
           </div>
           <div>
-            <strong>From:</strong>
+            <strong>From&nbsp; :</strong>
             <span className="ms-2 text-muted">{item.from}</span>
           </div>
           <Form.Control
@@ -30,7 +30,7 @@ const FeedbackCard = ({ item }) => {
             name="message"
             value={item.message}
             readOnly
-            rows={3}
+            rows={2}
             className="mt-2 border-1 bg-light"
             style={{ resize: "none", overflow: "auto" }}
           />

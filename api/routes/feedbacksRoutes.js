@@ -6,6 +6,6 @@ const router = express.Router();
 
 
 router.route('/:id').get(admin(['Owner', 'Editor', 'Viewer']), getFeedbacksById);
-router.route('/').post(admin(['Owner', 'Editor']), postFeedbacks);
+router.route('/:id').post(admin(['Owner', 'Editor']), postFeedbacks);
 
 module.exports = { feedbackRoutes: router};

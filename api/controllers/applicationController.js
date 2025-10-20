@@ -1,7 +1,6 @@
 const asyncHandler = require("express-async-handler");
 const Application = require("../model/applicationModel");
-const path = require("path");
-const { fileReader, filterApplications } = require("../helpers/utils");
+const { filterApplications } = require("../helpers/utils");
 const User = require("../model/userModel");
 const Position = require("../model/positionModel");
 
