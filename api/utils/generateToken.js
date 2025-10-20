@@ -9,7 +9,7 @@ exports.generateToken = (res, userId, role) => {
     res.cookie('careerJwt', token, {
         httpOnly: true,
         secure: true,
-        sameSite: 'none',
+        sameSite: 'None',
         maxAge: 30 * 24 * 60 * 60 * 1000 // 30 Days
     })
 }
