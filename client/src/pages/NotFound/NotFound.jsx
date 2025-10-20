@@ -19,16 +19,16 @@ const NotFound = () => {
             <br />
             <br />
             <span className="fs-5 ms-2">
-              The link is broken or the page has been moved.
+              Only Jobs page availiable.
             </span>
             <br />
             <br />
             <GradientButton
               $padding={"12px"}
               style={{ marginLeft: 2 }}
-              onClick={() => navigate('/')}
+              onClick={() => navigate('/open-positions')}
             >
-              <span className="fs-6 fw-bold">Home Page</span>
+              <span className="fs-6 fw-bold">Go Jobs</span>
             </GradientButton>
           </div>
         </Col>
