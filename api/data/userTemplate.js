@@ -8,6 +8,14 @@ const users = [
     division: ["All Divisions"],
   },
   {
+    name: "Test User",
+    email: "test@gmail.com",
+    password: "123",
+    type: "Admin",
+    role: "Viewer",
+    division: ["All Divisions"],
+  },
+  {
     name: "Jane",
     email: "jane@gmail.com",
     password: "123",

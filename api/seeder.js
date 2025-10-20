@@ -1,28 +1,59 @@
-const fs = require('fs');
 const bcrypt = require('bcryptjs');
-const { fileReader } = require('./helpers/utils');
+const dotenv = require('dotenv');
+const colors = require('colors');
+const { users } = require('./data/userTemplate');
+const { openPositions } = require('./data/positions');
+const User = require('./model/userModel.js');
+const Position = require('./model/positionModel.js');
+const connectDB  = require('./config/db.js');
+const Application = require('./model/applicationModel.js');
+const Feedback = require('./model/feedbackModel.js');
 
-const hashPasswords = async () => {
-  try {
-    const jsonData = await fileReader('userTemplate')
-    const users = jsonData.users.map((user) => {
-      const hashedPassword = bcrypt.hashSync(user.password, 10); 
-      return {
-        ...user,
-        password: hashedPassword, 
-      };
-    });
+dotenv.config(), connectDB();
 
-    fs.writeFileSync(
-      './data/users.json',
-      JSON.stringify({ users }, null, 2),
-      'utf8'
-    );
+const importData = async () => {
+    try {
+        await User.deleteMany();
+        await Position.deleteMany();
 
-    console.log('Passwords hashed and saved successfully.');
-  } catch (error) {
-    console.error('Error:', error);
-  }
+        const hashedUsers = users.map(user => {
+            const hashedPassword = bcrypt.hashSync(user.password, 10);
+            return { ...user, password: hashedPassword };
+        });
+        await User.insertMany(hashedUsers);
+        await Position.insertMany(openPositions);
+
+        console.log('Data Imported!'.green.inverse);
+        process.exit();
+    }
+    catch (error) {
+        console.log(`${error}`.red.inverse);
+        process.exit(1);
+    }
 };
 
-hashPasswords();
+module.exports = { importData };
+
+const destroyData = async () => {
+    try {
+        await User.deleteMany();
+        await Position.deleteMany();
+        await Application.deleteMany();
+        await Feedback.deleteMany();
+
+        console.log('Data Destroyed!'.red.inverse);
+        process.exit();
+    }
+    catch (error) {
+        console.log(`${error}`.red.inverse);
+        process.exit(1);
+    }
+}
+
+if (process.argv[2] === '-i') {
+    importData();
+}
+
+if (process.argv[2] === '-d') {
+    destroyData();
+}
