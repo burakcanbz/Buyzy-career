@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Form, Row, Col, Button, Image } from "react-bootstrap";
 import TagFiles from "../../../components/TagFiles";
 import SlidingPage from "../../../components/utils/SlidingPage";
@@ -13,6 +14,7 @@ import Loading from "../../../components/utils/Loading";
 
 const OperationsDetail = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const {
     data: jobData,
     isError,
@@ -51,7 +53,7 @@ const OperationsDetail = () => {
         ...prev,
         image: fileName ? `/images/${fileName}` : "",
       }));
-      setFiles((prevFiles) => [...prevFiles, ...filesArray]);
+      setFiles((prevFiles) => [filesArray[filesArray.length - 1]]);
     } catch (err) {
       console.error("File processing failed:", err);
     }
@@ -68,7 +70,7 @@ const OperationsDetail = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData();
-    formData.append("id", position.id);
+    formData.append("id", position._id);
     formData.append("title", position.title);
     formData.append("summary", position.summary);
     formData.append("division", position.division);
@@ -88,7 +90,11 @@ const OperationsDetail = () => {
     try {
       const response = await updatePosition({ id, formData }).unwrap();
       if (response.success) {
-        toast.success("File uploaded successfully.");
+        toast.success("File uploaded successfully." , {
+          onClose: () => {
+            navigate(-1);
+          }
+        });
       }
     } catch (error) {
       toast.error("File upload failed.");
@@ -192,7 +198,7 @@ const OperationsDetail = () => {
                 &nbsp;Position Image{" "}
               </Form.Label>
               <Col md={6} className="d-flex justify-content-center">
-                <Image src={position?.image || null} alt="Image" fluid />
+                <Image src={files.length !== 0 ? URL.createObjectURL(files[0]) : position?.image || null} alt="Image" fluid />
               </Col>
             </Form.Group>
             <TagFiles

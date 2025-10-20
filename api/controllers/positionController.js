@@ -16,19 +16,17 @@ exports.openPositionDetail = asyncHandler(async (req, res) => {
 });
 
 exports.openPositionPaginated = asyncHandler( async(req, res) => {
-    const page = Number(req.query.page) || 1;
-    const limit = Number(req.query.limit) || 18;
+    const page = Math.max(Number(req.query.page) || 1, 1);
+    const limit = Math.max(Number(req.query.limit) || 10, 1);
     const skip = (page - 1) * limit;
     const total = await Position.countDocuments();
     const paginatedPositions = await Position.find()
       .skip(skip)
       .limit(limit)
-      .sort({ createdAt: -1 });
     const totalPages = Math.ceil(total / limit);
 
-    if(total === 0){
-      res.status(404)
-      throw new Error("Data not found");
+    if(page > totalPages && total === 0){
+      return res.status(404).json({ message: "Data not found" });
     }
 
     return res.status(200).json({
@@ -40,8 +38,8 @@ exports.openPositionPaginated = asyncHandler( async(req, res) => {
 
 exports.updatePosition = asyncHandler( async(req, res) => {
   const { id, title, summary, division, location, requirements, responsibilities, image } = req.body;
-  const updatedPosition = { id: Number(id), title, summary, division, location, requirements, responsibilities, image};
-  await Position.findByIdAndUpdate(id, updatedPosition);
+  const updatedPosition = { id, title, summary, division, location, requirements, responsibilities, image};
+  const resp = await Position.findByIdAndUpdate(id, updatedPosition);
   return res.status(200).json({ success: true, message: "Applications successfully updated." });
 })
 

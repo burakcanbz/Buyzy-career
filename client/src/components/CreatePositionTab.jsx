@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { Form, Row, Col } from "react-bootstrap";
 import { usePostPositionMutation } from "../slices/positionApiSlice";
 import { toast } from "react-toastify";
@@ -9,7 +9,6 @@ import SlidingPage from "./utils/SlidingPage";
 const CreatePositionTab = () => {
   const [postPosition] = usePostPositionMutation();
   const [files, setFiles] = useState([]);
-  const [submit, setSubmit] = useState(false);
   const [position, setPosition] = useState({
     title: "",
     summary: "",
@@ -40,7 +39,23 @@ const CreatePositionTab = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmit(true);
+    try {
+      const formData = new FormData();
+      formData.append("title", position.title);
+      formData.append("summary", position.summary);
+      formData.append("division", position.division);
+      formData.append("location", position.location);
+      formData.append("requirements", position.requirements);
+      formData.append("responsibilities", position.responsibilities);
+      formData.append("image", JSON.stringify(position.image));
+      files.forEach((file) => {
+        formData.append("file", file);
+      });
+      const _ = await postPosition({ formData }).unwrap();
+      toast.success("Position created successfully.");
+    } catch (err) {
+      toast.error(err || "Unexpected error happened while creating position.");
+    }
   };
 
   const handleKeyDown = (e) => {
@@ -49,38 +64,6 @@ const CreatePositionTab = () => {
     }
   };
 
-  const post = async () => {
-    if (submit) {
-      try {
-        const formData = new FormData();
-        formData.append("title", position.title);
-        formData.append("summary", position.summary);
-        formData.append("division", position.division);
-        formData.append("location", position.location);
-        formData.append("requirements", position.requirements);
-        formData.append("responsibilities", position.responsibilities);
-        formData.append("image", JSON.stringify(position.image));
-        files.forEach((file) => {
-          formData.append("file", file);
-        });
-        const resp = await postPosition({ formData }).unwrap();
-        toast.success("Position created successfully.");
-        setSubmit(false);
-      } catch (err) {
-        toast.error(
-          err || "Unexpected error happened while creating position."
-        );
-        setSubmit(false);
-      }
-    }
-  };
-
-  useEffect(() => {
-    if (submit) {
-      post();
-    }
-  }, [submit]);
-
   return (
     <SlidingPage animationClassName={"slide-in"}>
       <Row className="d-flex justify-content-center">
@@ -88,7 +71,7 @@ const CreatePositionTab = () => {
           <Form
             className="w-75"
             id="apply-form"
-            onSubmit={handleSubmit}
+            // onSubmit={handleSubmit}
             onKeyDown={handleKeyDown}
           >
             <Form.Group className="mb-4" controlId="formBasicEmail">
@@ -183,7 +166,7 @@ const CreatePositionTab = () => {
             <br />
             <br />
             <div className="d-flex justify-content-center">
-              <GradientButton type="submit">
+              <GradientButton type="button" onClick={handleSubmit}>
                 <span style={{ color: "white" }}>Create Position</span>
               </GradientButton>
             </div>

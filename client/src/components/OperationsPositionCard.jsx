@@ -22,9 +22,9 @@ const OperationsPositionCard = ({ position, index, buttonName, refetch }) => {
 
   const handleClick = async () => {
     if (buttonName === "Update") {
-      navigate(`${ADMIN_URL}${OPERATIONS_URL}/${position.id}`);
+      navigate(`${ADMIN_URL}${OPERATIONS_URL}/${position._id}`);
     } else {
-      setSelectedPositionId(position.id);
+      setSelectedPositionId(position._id);
       setModalShow(true);
     }
   };
