@@ -1,4 +1,4 @@
-import { ITEMS_PER_PAGE } from "../constants";
+import { BASE_URL, ITEMS_PER_PAGE } from "../constants";
 import axios from "axios";
 
 export const getValues = (arr, key) => {
@@ -71,15 +71,13 @@ export const getFilteredItems = (data, searchingItem) => {
 export const groupedById = (apps) => {
   if (apps) {
     const applicationGroup = apps.reduce((acc, obj) => {
-      const id = String(obj.position.id);
-
-      if (!acc[obj.position.id]) {
+      const id = obj.position._id;
+      if (!acc[id]) {
         acc[id] = [];
       }
       acc[id].push(obj);
       return acc;
     }, {});
-
     return Object.values(applicationGroup);
   }
   return null;
@@ -112,7 +110,7 @@ export const getQueryParams = (queryParams) => {
 
 export const getQueryParamNames = (name, itemInfo) => {
   if (name === "title") {
-    return { filterQuery: "id", nameQuery: itemInfo.position.id };
+    return { filterQuery: "id", nameQuery: itemInfo.position._id };
   } else if (name === "division") {
     return { filterQuery: name, nameQuery: itemInfo.position.division };
   }
@@ -140,7 +138,7 @@ export const filesToBase64 = async (images) => {
 
 export const downloadFile = async (fileName) => {
   try {
-    const response = await axios.get("http://localhost:3000/file", {
+    const response = await axios.get(`${BASE_URL}/file`, {
       params: { fileName },
       withCredentials: true,
       responseType: 'blob'

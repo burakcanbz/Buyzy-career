@@ -11,7 +11,6 @@ const Applications = () => {
   const { userInfo } = useSelector((state) => state.auth);
   const { data, error, isLoading } = useGetApplicationsQuery({ id: userInfo._id});
   const apps = data?.applications;
-
   
   if (isLoading) {
     return <Loading />;

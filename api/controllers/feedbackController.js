@@ -1,36 +1,28 @@
 const asyncHandler = require('express-async-handler');
-const { fileReader, addFeedback } = require('../helpers/utils');
+const Feedback = require('../model/feedbackModel');
 
 exports.getFeedbacksById = asyncHandler( async(req, res) => {
     const { id } = req.params;
-    const { feedbacks } = await fileReader("feedbacks");
-    const filteredByIdFeedbacks = feedbacks.filter(item =>  item.applicationId === id) 
-    return res.status(200).json({feedbacks: filteredByIdFeedbacks});
+    const feedbacks = await Feedback.find({ applicationId: id });
+    return res.status(200).json({feedbacks});
 })
 
 exports.postFeedbacks = asyncHandler( async(req, res) => {
+    const { id: applicationId } = req.params;
     const { feedback } = req.body;
-    const feedbacks = await fileReader('feedbacks');
-    const allFeedbacks = feedbacks.feedbacks;
+    const allFeedbacks = await Feedback.find({ applicationId });
 
-    if (allFeedbacks && allFeedbacks.length > 0) {
-        const sameApps = allFeedbacks.filter(
-          (item) => item.applicationId === feedback.applicationId
-        );
-        if (sameApps.length > 0) {
-          const sameUser = sameApps.find(
-            (item) => item.from === feedback.from
-          );
-          if (sameUser) {
-            res.status(400);
-            throw new Error("Feedback already exists for this position.");
-          }
+    if (allFeedbacks.length > 0) {
+        const sameUser = allFeedbacks.find(item => item.from === feedback.from);
+        if (sameUser) {
+            return res.status(400).json({ error: true, message: "Feedback already exists for this position." });
         }
       }
-    await addFeedback("feedbacks", feedback);
+
+    const newFeedback = await Feedback.create(feedback);
     return res.status(200).json({
         error: false,
         message: "feedback saved successfully",
-        feedback,
+        feedback: newFeedback,
       });
 })

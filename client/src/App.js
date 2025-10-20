@@ -2,8 +2,8 @@ import React, { Profiler } from "react";
 import { Outlet } from "react-router-dom";
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
 import { ToastContainer, toast } from 'react-toastify';
-import Footer from "./components/organisms/Footer";
-import Header from "./components/organisms/Header";
+import Footer from "./components/layout/Footer";
+import Header from "./components/layout/Header";
 import 'react-toastify/dist/ReactToastify.css'; 
 import "./App.css";
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
 import { usePostFeedbackMutation } from "../slices/feedbackApiSlice";
 import { toast } from "react-toastify";
@@ -6,7 +6,6 @@ import { downloadFile } from "../helpers/helper";
 import HireStatus from "./HireStatus";
 
 const ApplicationFormContent = ({ userInfo, id, appDetail, refetchFeed, refetchApp }) => {
-  const [updated, setUpdated] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [feedback, setFeedback] = useState({
     status: "",
@@ -34,37 +33,22 @@ const ApplicationFormContent = ({ userInfo, id, appDetail, refetchFeed, refetchA
     }));
   };
 
-  const sendFeedback = async () => {
+  const submitFeedback = async(e) => {
+    e.preventDefault();
     try {
       if (isChecked) {
+        console.log("Feedback to submit:", feedback);
         const resp = await postFeedback({ feedback }).unwrap();
-        refetchFeed(id).then(data => console.log("in refetch => ", data));
+        refetchFeed(id).then();
         toast.success("Feedback sent successfully");
-        setUpdated(false);
       } else {
         toast.error("You need to check the status box.");
         setIsChecked(false);
       }
     } catch (err) {
       toast.error(err.data.message || "Error while sending feedback");
-      setUpdated(false);
     }
   };
-
-  const submitFeedback = (e) => {
-    e.preventDefault();
-    if (!isChecked) {
-      toast.error("You need to check the status box.");
-      return;
-    }
-    setUpdated(true);
-  };
-
-  useEffect(() => {
-    if (updated) {
-      sendFeedback();
-    }
-  }, [updated]);
 
   return (
     <>

@@ -1,0 +1,254 @@
+const openPositions = [
+  {
+    title: "Product Specialist",
+    summary:
+      "We are seeking a Product Manager to define product vision, prioritize features, and lead cross-functional teams to deliver impactful solutions. Responsibilities include gathering feedback, analyzing market trends, and guiding development to ensure alignment with business goals. Strong analytical, problem-solving, and communication skills are essential.\nThis role also requires stakeholder management, data-driven decision-making, and the ability to balance short-term priorities with long-term strategy. You will have the opportunity to shape product direction, drive innovation, and make a significant impact on the company’s success.",
+    division: "Product",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/product.png",
+  },
+  {
+    title: "Product Specialist",
+    summary:
+      "We are seeking a Product Manager to define product vision, prioritize features, and lead cross-functional teams to deliver impactful solutions. Responsibilities include gathering feedback, analyzing market trends, and guiding development to ensure alignment with business goals. Strong analytical, problem-solving, and communication skills are essential.\nThis role also requires stakeholder management, data-driven decision-making, and the ability to balance short-term priorities with long-term strategy. You will have the opportunity to shape product direction, drive innovation, and make a significant impact on the company’s success.",
+    division: "Product",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/product.png",
+  },
+  {
+    title: "Product Specialist (Part-time)",
+    summary:
+      "We are seeking a Product Manager to define product vision, prioritize features, and lead cross-functional teams to deliver impactful solutions. Responsibilities include gathering feedback, analyzing market trends, and guiding development to ensure alignment with business goals. Strong analytical, problem-solving, and communication skills are essential.\nThis role also requires stakeholder management, data-driven decision-making, and the ability to balance short-term priorities with long-term strategy. You will have the opportunity to shape product direction, drive innovation, and make a significant impact on the company’s success.",
+    division: "Product",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/product.png",
+  },
+  {
+    title: "Frontend Developer",
+    summary:
+      "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
+    division: "Engineering",
+    location: "Istanbul",
+    requirements: "Some reqs",
+    responsibilities: "Deneme",
+    image: "/images/engineer.png",
+  },
+  {
+    title: "Backend Engineer",
+    summary:
+      "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
+    division: "Engineering",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/engineer.png",
+  },
+  {
+    title: "Backend Engineer (New Grad)",
+    summary:
+      "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
+    division: "Engineering",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/engineer.png",
+  },
+  {
+    title: "Frontend Developer (Part-time)",
+    summary:
+      "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
+    division: "Engineering",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/engineer.png",
+  },
+  {
+    title: "Full Stack Developer",
+    summary:
+      "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
+    division: "Engineering",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/engineer.png",
+  },
+  {
+    title: "Senior Backend Engineer",
+    summary:
+      "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
+    division: "Engineering",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/engineer.png",
+  },
+  {
+    title: "Software Engineer",
+    summary:
+      "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
+    division: "Engineering",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/engineer.png",
+  },
+  {
+    title: "Backend Engineer (Part-time)",
+    summary:
+      "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
+    division: "Engineering",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/engineer.png",
+  },
+  {
+    title: "DevOps Engineer",
+    summary:
+      "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
+    division: "Engineering",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/engineer.png",
+  },
+  {
+    title: "DevOps Engineer (Part-time)",
+    summary:
+      "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
+    division: "Engineering",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/engineer.png",
+  },
+  {
+    title: "Security Engineer",
+    summary:
+      "We are seeking a versatile and skilled Engineer to join our team and contribute to designing, developing, and maintaining high-quality systems and solutions. In this role, you will collaborate with cross-functional teams to solve technical challenges, improve efficiency, and ensure projects are delivered on time. The ideal candidate has a strong technical foundation, problem-solving skills, and experience with software or hardware engineering principles relevant to our domain. Responsibilities include analyzing requirements, designing scalable solutions, implementing and testing systems, and troubleshooting issues as they arise.\nThe Engineer will also play a key role in optimizing workflows, supporting continuous improvement initiatives, and staying updated on emerging technologies to drive innovation. You should be able to work effectively in a fast-paced environment, manage multiple priorities, and communicate technical information clearly across teams. This position offers the opportunity to grow professionally, work on challenging projects, and make a meaningful impact on the company’s technical success.",
+    division: "Engineering",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/engineer.png",
+  },
+  {
+    title: "Senior Recruitment Specialist",
+    summary:
+      "We are seeking a proactive Recruitment Specialist to manage the full hiring lifecycle, including sourcing, interviewing, and onboarding top talent. You will ensure that candidates align with our company values and culture while supporting hiring managers across departments. Strong communication, organizational skills, and experience with applicant tracking systems are essential.\nIn this role, you will also assist in employer branding and analyze recruitment metrics to improve processes. You should thrive in a fast-paced environment, collaborate across teams, and contribute to building a strong, engaged workforce. This position provides the chance to directly impact company growth and advance your HR career.",
+    division: "Human Resources",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/recruitment.png",
+  },
+  {
+    title: "Recruitment Specialist",
+    summary:
+      "We are seeking a proactive Recruitment Specialist to manage the full hiring lifecycle, including sourcing, interviewing, and onboarding top talent. You will ensure that candidates align with our company values and culture while supporting hiring managers across departments. Strong communication, organizational skills, and experience with applicant tracking systems are essential.\nIn this role, you will also assist in employer branding and analyze recruitment metrics to improve processes. You should thrive in a fast-paced environment, collaborate across teams, and contribute to building a strong, engaged workforce. This position provides the chance to directly impact company growth and advance your HR career.",
+    division: "Human Resources",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/recruitment.png",
+  },
+  {
+    title: "Recruitment Specialist (Part-time)",
+    summary:
+      "We are seeking a proactive Recruitment Specialist to manage the full hiring lifecycle, including sourcing, interviewing, and onboarding top talent. You will ensure that candidates align with our company values and culture while supporting hiring managers across departments. Strong communication, organizational skills, and experience with applicant tracking systems are essential.\nIn this role, you will also assist in employer branding and analyze recruitment metrics to improve processes. You should thrive in a fast-paced environment, collaborate across teams, and contribute to building a strong, engaged workforce. This position provides the chance to directly impact company growth and advance your HR career.",
+    division: "Human Resources",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/recruitment.png",
+  },
+  {
+    title: "Executive Assistant",
+    summary:
+      "We are seeking a proactive Recruitment Specialist to manage the full hiring lifecycle, including sourcing, interviewing, and onboarding top talent. You will ensure that candidates align with our company values and culture while supporting hiring managers across departments. Strong communication, organizational skills, and experience with applicant tracking systems are essential.\nIn this role, you will also assist in employer branding and analyze recruitment metrics to improve processes. You should thrive in a fast-paced environment, collaborate across teams, and contribute to building a strong, engaged workforce. This position provides the chance to directly impact company growth and advance your HR career.",
+    division: "Human Resources",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/recruitment.png",
+  },
+  {
+    title: "Marketing Analytics Manager",
+    summary:
+      "We are seeking a detail-oriented Marketing Analytics Manager to lead our marketing data analysis efforts. You will be responsible for collecting, analyzing, and interpreting large datasets to drive marketing strategy and decision-making. Strong analytical skills, experience with data visualization tools, and a deep understanding of digital marketing metrics are essential.\nIn this role, you will collaborate with cross-functional teams to identify key performance indicators, develop dashboards, and provide actionable insights. You should thrive in a fast-paced environment, possess excellent communication skills, and be able to translate complex data into clear recommendations.\nThis position offers the opportunity to make a significant impact on our marketing initiatives and advance your career in data analytics.",
+    division: "Marketing",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/marketing.png",
+  },
+  {
+    title: "Senior Marketing Analyst",
+    summary:
+      "We are seeking a detail-oriented Senior Marketing Analyst to drive our marketing data analysis efforts. You will be responsible for collecting, analyzing, and interpreting large datasets to inform marketing strategy and decision-making. Strong analytical skills, experience with data visualization tools, and a deep understanding of digital marketing metrics are essential.\nIn this role, you will collaborate with cross-functional teams to identify key performance indicators, develop dashboards, and provide actionable insights. You should thrive in a fast-paced environment, possess excellent communication skills, and be able to translate complex data into clear recommendations.\nThis position offers the opportunity to make a significant impact on our marketing initiatives and advance your career in data analytics.",
+    division: "Marketing",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/marketing.png",
+  },
+  {
+    title: "Senior Customer Support Specialist",
+    summary:
+      "We are seeking a proactive Senior Customer Support Specialist to provide exceptional support to our clients and ensure their success with our products. You will be responsible for managing customer inquiries, troubleshooting issues, and collaborating with cross-functional teams to deliver solutions. Strong communication skills, empathy, and a customer-centric mindset are essential.\nIn this role, you will also analyze customer feedback and support metrics to identify areas for improvement. You should thrive in a fast-paced environment, possess excellent problem-solving skills, and be able to handle challenging situations with professionalism. This position offers the opportunity to make a significant impact on customer satisfaction and advance your career in customer support.",
+    division: "Customer Support",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/customer-support.png",
+  },
+  {
+    title: "Customer Support Specialist",
+    summary:
+      "We are seeking a proactive Customer Support Specialist to provide exceptional support to our clients and ensure their success with our products. You will be responsible for managing customer inquiries, troubleshooting issues, and collaborating with cross-functional teams to deliver solutions. Strong communication skills, empathy, and a customer-centric mindset are essential.\nIn this role, you will also analyze customer feedback and support metrics to identify areas for improvement. You should thrive in a fast-paced environment, possess excellent problem-solving skills, and be able to handle challenging situations with professionalism. This position offers the opportunity to make a significant impact on customer satisfaction and advance your career in customer support.",
+    division: "Customer Support ",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/customer-support.png",
+  },
+  {
+    title: "Community Specialist",
+    summary:
+      "We are seeking a proactive Community Specialist to engage with our user community and foster positive relationships. You will be responsible for managing community interactions, addressing user feedback, and collaborating with cross-functional teams to enhance the user experience. Strong communication skills, empathy, and a community-focused mindset are essential.\nIn this role, you will also analyze community engagement metrics to identify trends and areas for improvement. You should thrive in a fast-paced environment, possess excellent problem-solving skills, and be able to handle challenging situations with professionalism. This position offers the opportunity to make a significant impact on our community initiatives and advance your career in community management.",
+    division: "Customer Support ",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/customer-support.png",
+  },
+  {
+    title: "Data Analyst",
+    summary:
+      "We are seeking a detail-oriented Data Analyst to join our data team. You will be responsible for collecting, analyzing, and interpreting large datasets to drive business insights and decision-making. Strong analytical skills, experience with data visualization tools, and a solid understanding of statistical methods are essential.\nIn this role, you will collaborate with cross-functional teams to identify key metrics, develop reports, and provide actionable recommendations. You should thrive in a fast-paced environment, possess excellent communication skills, and be able to translate complex data into clear insights.\nThis position offers the opportunity to make a significant impact on our data initiatives and advance your career in data analytics.",
+    division: "Data Science",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/data-scientist.png",
+  },
+  {
+    title: "Data Scientist",
+    summary:
+      "We are seeking a skilled Data Scientist to join our data team. You will be responsible for developing predictive models, conducting experiments, and providing insights to drive business decisions. Strong programming skills, experience with machine learning frameworks, and a solid understanding of statistical analysis are essential.\nIn this role, you will collaborate with cross-functional teams to identify opportunities for data-driven solutions and communicate your findings effectively. You should thrive in a fast-paced environment, possess excellent problem-solving skills, and be able to work with large datasets.\nThis position offers the opportunity to make a significant impact on our data initiatives and advance your career in data science.",
+    division: "Data Science",
+    location: "Istanbul",
+    requirements: "",
+    responsibilities: "",
+    image: "/images/data-scientist.png",
+  },
+];
+
+module.exports = { openPositions };

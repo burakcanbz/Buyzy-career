@@ -15,9 +15,10 @@ export const positionApiSlice = apiSlice.injectEndpoints({
       }),
     }),
     getPositionWithPage: builder.query({
-      query: ({ page, limit }) => ({
+      query: ({ page, limit }) => {
+        return{
         url: `${POSITIONS_URL}/positions?page=${page}&limit=${limit}`,
-      }),
+      }},
       keepUnusedDataFor: 5,
     }),
     postPosition: builder.mutation({

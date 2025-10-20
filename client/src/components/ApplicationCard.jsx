@@ -57,7 +57,7 @@ const ApplicationCard = ({ index, item, pathname, userInfo, name }) => {
               className="mt-2"
             >
               {name === "title" ?<> <strong className="fs-6">Position Id:</strong>
-              <span className="fw-bold text-black fs-6">{itemInfo.position.id}</span> </>: <>
+              <span className="fw-bold text-black fs-6"> {itemInfo.position._id}</span> </>: <>
               <strong className="fs-6">Division:</strong><span className="fw-bold text-black fs-6"> {itemInfo.position.division}</span></>}
               
             </Typography>

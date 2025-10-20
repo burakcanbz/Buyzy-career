@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a81d2a4e.css",
+    "main.js": "/static/js/main.8f01f8f4.js",
+    "static/js/488.5dc00adb.chunk.js": "/static/js/488.5dc00adb.chunk.js",
+    "static/media/office1.jpg": "/static/media/office1.ce1921a8d744dbc4a5c9.jpg",
+    "static/media/buyzy.png": "/static/media/buyzy.a28ec62809133464e680.png",
+    "static/media/buyzy-ref.png": "/static/media/buyzy-ref.bea83c53ac0e8346047c.png",
+    "static/media/home.jpg": "/static/media/home.0ef8ffcae4fcddfcd466.jpg",
+    "static/media/office3.jpg": "/static/media/office3.a254e48413c248968f83.jpg",
+    "static/media/office2.jpg": "/static/media/office2.0fe3f3e4fa6cf9615f0a.jpg",
+    "static/media/404.jpg": "/static/media/404.7a1c512940e614b948ed.jpg",
+    "index.html": "/index.html",
+    "main.a81d2a4e.css.map": "/static/css/main.a81d2a4e.css.map",
+    "main.8f01f8f4.js.map": "/static/js/main.8f01f8f4.js.map",
+    "488.5dc00adb.chunk.js.map": "/static/js/488.5dc00adb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a81d2a4e.css",
+    "static/js/main.8f01f8f4.js"
+  ]
+}

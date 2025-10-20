@@ -4,9 +4,10 @@ import { apiSlice } from "./apiSlice";
 export const applicationApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     getApplications: builder.query({
-      query: ({ id }) => ({
-        url: `${ADMIN_URL}${APP_URL}/?id=${id}`,
-      }),
+      query: ({ id }) => {
+        return {
+        url: `${ADMIN_URL}${APP_URL}/${id}`,
+      }},
       keepUnusedDataFor: 5,
     }),
     getApplicationsByQuery: builder.query({

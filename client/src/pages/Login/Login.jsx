@@ -6,6 +6,7 @@ import { BiLogIn } from "react-icons/bi";
 import { useLoginMutation } from "../../slices/authApiSlice";
 import { setCredentials } from "../../slices/authSlice";
 import { toast } from "react-toastify";
+import buyzy from "../../assets/buyzy-ref.png";
 import Loading from "../../components/utils/Loading";
 
 const Login = () => {
@@ -43,10 +44,10 @@ const Login = () => {
         <Col md={3}>
           <Card
             className="border-0 my-5 p-3 rounded shadow-lg d-flex justify-content-center align-items-center"
-            style={{ minHeight: 500 }}>
+            style={{ backgroundImage: `url(${buyzy})`, backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "center", minHeight: 500 }}>
             <span className="fs-4 fw-bold text-muted">Admin Panel</span>
             <BiLogIn style={{ fontSize: 64, marginTop: 10, marginBottom: 4 }} />
-            <h1 className="fw-bold">Sign In</h1>
+            <h1 className="fw-bold text-white">Sign In</h1>
             <Form onSubmit={submitHandler}>
               <Form.Group controlId="email" className="my-3">
                 <Form.Label className="fw-bold">Email Address</Form.Label>
@@ -60,7 +61,7 @@ const Login = () => {
                 ></Form.Control>
               </Form.Group>
               <Form.Group controlId="password" className="my-3">
-                <Form.Label className="fw-bold" >Password</Form.Label>
+                <Form.Label className="fw-bold">Password</Form.Label>
                 <Form.Control
                   type="password"
                   placeholder="Enter password"

@@ -22,7 +22,7 @@ const OpenPositionDetails = () => {
   };
 
   const handleClick = () => {
-    window.open(`/${position.id}/apply`, "_blank");
+    window.open(`/${position._id}/apply`, "_blank");
   };
 
   useEffect(() => {

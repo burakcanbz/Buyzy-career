@@ -1,15 +1,15 @@
 const jwt = require("jsonwebtoken");
 const asyncHandler = require("express-async-handler");
-const { fileReader } = require("../helpers/utils");
+const User = require("../model/userModel");
 
 exports.admin = (roles) =>
   asyncHandler(async (req, res, next) => {
-    let token = req.cookies.jwt;
-    const data = await fileReader("users");
+    let token = req.cookies.careerJwt;
+    const data = await User.find();
     if (token) {
       try {
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
-        req.user = data.users.find((user) => decoded.userId === user._id);
+        req.user = data.find((user) => decoded.userId === String(user._id));
 
         if (!req.user) {
           res.status(401);

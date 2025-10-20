@@ -188,7 +188,6 @@ const deletePosition = async (fileName, id) => {
     const positionIndex = positions.findIndex(
       (position) => position.id === Number(id)
     );
-    console.log(positionIndex);
     if (positionIndex === -1) {
       throw new Error("Position not found");
     }

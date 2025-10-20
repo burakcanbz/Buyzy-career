@@ -17,14 +17,14 @@ const PositionList = () => {
   const { searchedItems } = useSelector((state) => state.position);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  
+
   const openPositions = useMemo(() => {
-    return data?.data?.openPositions || [];
-  }, [data?.data?.openPositions]);
+    return data?.data || [];
+  }, [data?.data]);
   
   useEffect(() => {
     if (data) {
-      dispatch(setPositions(data?.data?.openPositions));
+      dispatch(setPositions(data?.data));
     }
   }, [data, dispatch]);
 
@@ -93,7 +93,7 @@ const PositionList = () => {
                 key={index}
                 className="d-flex justify-content-center" >
                 <PositionCard
-                  key={position.id}
+                  key={position._id}
                   position={position}
                   index={index} />
               </Col>

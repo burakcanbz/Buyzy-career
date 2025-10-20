@@ -11,7 +11,7 @@ const feedbackApiSlice = apiSlice.injectEndpoints({
     }),
     postFeedback: builder.mutation({
       query: ({ feedback }) => ({
-        url: `${FEEDBACK_URL}`,
+        url: `${FEEDBACK_URL}/${feedback.applicationId}`,
         method: "POST",
         body: { feedback: feedback },
       }),

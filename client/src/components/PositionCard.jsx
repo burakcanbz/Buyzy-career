@@ -30,7 +30,7 @@ const PositionCard = ({ position, index }) => {
   const handleLink = () => {
     dispatch(clearSearchItems());
     navigate(
-      `${POSITIONS_URL}/${position.id}/${convertFromPositionToURL(
+      `${POSITIONS_URL}/${position._id}/${convertFromPositionToURL(
         position.title
       )}`
     );
@@ -38,7 +38,7 @@ const PositionCard = ({ position, index }) => {
 
   const handleClick = (e) => {
     e.stopPropagation();
-    window.open(`/${position.id}/apply`);
+    window.open(`/${position._id}/apply`);
   };
 
   const handleMouseEnter = () => {

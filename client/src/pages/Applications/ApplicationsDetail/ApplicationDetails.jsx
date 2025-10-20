@@ -35,7 +35,7 @@ const ApplicationDetails = () => {
                     key={index}
                     sx={{ display: "flex", cursor: "pointer", boxShadow: "2px 5px 15px rgba(0, 0, 0, .5)" }}
                     className="mb-4"
-                    onClick={() => navigate(`${location.pathname}/details/${item.id}`)}
+                    onClick={() => navigate(`${location.pathname}/details/${item._id}`)}
                   >
                     <CardMedia
                       component="img"
@@ -62,7 +62,7 @@ const ApplicationDetails = () => {
                           sx={{ color: "text.secondary" }}
                           className="mt-2"
                         >
-                          <strong>Application Id:</strong> <span className="fw-bold text-black">{item.id}</span>
+                          <strong>Application Id:</strong> <span className="fw-bold text-black">{item._id}</span>
                         </Typography>
                         <Typography
                           component="div"
