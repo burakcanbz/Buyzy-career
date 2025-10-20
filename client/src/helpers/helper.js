@@ -138,7 +138,7 @@ export const filesToBase64 = async (images) => {
 
 export const downloadFile = async (fileName) => {
   try {
-    const response = await axios.get(`${BASE_URL}/file`, {
+    const response = await axios.get(`https://buyzycareer.onrender.com/file`, {
       params: { fileName },
       withCredentials: true,
       responseType: 'blob'
