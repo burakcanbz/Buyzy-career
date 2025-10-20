@@ -1,4 +1,6 @@
 # Buyzy Career
+**Important Note:** Auth is provided for Android devices, Chrome, and Mozilla.  
+iOS devices and Safari have limitations regarding cross-site cookies due to [Intelligent Tracking Prevention](https://www.apple.com/safari/docs/Safari_White_Paper_Nov_2019.pdf).
 
 Buyzy Career is a modern career portal where candidates can explore job opportunities and easily submit their applications. Only **Careers - Jobs page and its related pages reachable**. Other pages just added for better view.
 
