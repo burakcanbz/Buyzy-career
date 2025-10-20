@@ -10,6 +10,7 @@ exports.generateToken = (res, userId, role) => {
         httpOnly: true,
         secure: true,
         sameSite: 'None',
+        domain: '.buyzy-career.onrender.com',
         maxAge: 30 * 24 * 60 * 60 * 1000 // 30 Days
     })
 }
