@@ -8,7 +8,6 @@ import { useSelector } from "react-redux";
 import { getQueryParams } from "../../../helpers/helper";
 import Loading from "../../../components/utils/Loading";
 import Message from "../../../components/utils/Message";
-import { useGetFeedbacksQuery } from "../../../slices/feedbackApiSlice";
 
 const ApplicationDetails = () => {
 
