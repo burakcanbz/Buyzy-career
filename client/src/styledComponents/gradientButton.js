@@ -16,7 +16,7 @@ const GradientButton = styled.button`
   padding-left: ${(props) => props.$paddingLeft || '22px'};
   padding-right: ${(props) => props.$paddingRight || '22px'};
   transition: color 0.3s ease;
-  background-color:rgb(163, 166, 168);
+  background: ${(props) => props.$background || 'rgb(163, 166, 168)'};
 
   &::before {
     content: "";
@@ -25,9 +25,10 @@ const GradientButton = styled.button`
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #0D6EFD,rgb(52, 69, 218));
+    background: ${(props) =>
+      props.$hoverGradient || "linear-gradient(to right, #0D6EFD,rgb(52, 69, 218))"};
     z-index: -1;
-    transition: left 0.5s ease
+    transition: left 0.5s ease;
   }
 
   &:hover::before {

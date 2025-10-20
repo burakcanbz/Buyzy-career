@@ -32,7 +32,7 @@ const Apply = () => {
 
   return (
     <SlidingPage animationClassName={"slide-top"}>
-      <div className="p-5">
+      <div className="px-5 pb-5 p-md-5">
         <Row>
           <Col
             md={{ span: 4, offset: 0 }}

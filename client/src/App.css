@@ -54,17 +54,13 @@ html, body {
   font-weight: bold;
   border-radius: 80px !important;
 }
-.navbar-toggler-icon {
-  background-color: #c9c3c3 !important; 
-}
+
 .navbar .dropdown-toggle::after {
   color: white !important; 
 }
 .toggle-none .dropdown-toggle::after {
   display: none; 
 }
-
-
 /* Footer p color */
 
 .footer p {
@@ -302,4 +298,10 @@ input::placeholder {
   color: white;
   font-size: 45px;
   font-family: 'Fredoka One', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .w-md-75 {
+    width: 75%;
+  }
 }

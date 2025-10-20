@@ -8,10 +8,10 @@ const NotFound = () => {
     const navigate = useNavigate();
 
   return (
-    <div className="p-5 bg-white h-screen" style={{ width: "100vw" }}>
+    <div className="d-flex justify-content-center align-items-center p-5 bg-white" style={{ width: "100vw", height: "80dvh" }}>
       <Row className="d-flex justify-content-between align-items-center">
         <Col md={6} className="d-flex justify-content-end align-items-center">
-          <Image src={notFound} width={500} height={400} style={{ borderRadius: "10px" }}/>
+          <Image src={notFound} style={{ borderRadius: "10px",  width: "clamp(300px, 30vw, 500px)", height: "300px"}}/>
         </Col>
         <Col md={6} className="d-flex justify-content-start">
           <div className="mt-5">

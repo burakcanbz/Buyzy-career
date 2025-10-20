@@ -24,12 +24,10 @@ const App = () => {
         style={{
           minHeight: "100vh",
           backgroundColor: "rgba(240, 240, 240)",
-        }}
-      >
+        }}>
         <Header />
         <main
-          style={{ flexGrow: 1, marginTop: 105 }}
-        >
+          style={{ flexGrow: 1 }}>
           <Outlet />
         </main>
         <Footer />

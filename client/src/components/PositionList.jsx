@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useRef } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import { calculateValues } from "../helpers/helper";
 import { useNavigate } from "react-router-dom";
@@ -12,6 +12,8 @@ import GradientButton from "../styledComponents/gradientButton";
 import PositionCard from "./PositionCard";
 
 const PositionList = () => {
+  const ref = useRef(null);
+  const firstRender = useRef(true);
   const [currentPage, setCurrentPage] = useState(1);
   const { data, error, isLoading } = useGetJobItemsQuery();
   const { searchedItems } = useSelector((state) => state.position);
@@ -31,6 +33,17 @@ const PositionList = () => {
   useEffect(() => {
     setCurrentPage(1);
   }, [searchedItems]);
+
+  useEffect(() => {
+    if (firstRender.current) {
+      firstRender.current = false;
+      return;
+    }
+
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [currentPage]);
 
   const [items, totalPages, pageNumbers] = useMemo(() => {  // Avoid recalculation if any other render different than updating these parameter values.
     return calculateValues(currentPage, searchedItems, openPositions);
@@ -55,7 +68,10 @@ const PositionList = () => {
     return <Message variant="danger">{error.message || message}</Message>;
   }
 
-  const handlePagination = (pageNumber) => setCurrentPage(pageNumber);
+  const handlePagination = (pageNumber) => {
+    setCurrentPage(pageNumber)
+  };
+
   const nextPage = () => currentPage < totalPages && setCurrentPage(currentPage + 1);
   const prevPage = () => currentPage > 1 && setCurrentPage(currentPage - 1);
 
@@ -72,7 +88,7 @@ const PositionList = () => {
     <>
     <div style={{ background: "radial-gradient(circle,  rgb(240, 240, 240),  rgb(220 220 220), rgb(235, 235, 243))"}}>
       <Container >
-        <Row className="d-flex justify-content-center">
+        <Row className="d-flex justify-content-center" ref={ref}>
           <Col className="d-flex justify-content-start align-items-center text-muted fs-5 mt-4 mb-4">
             {searchedItems?.length > 0 ? (
               <span>Open Roles: {searchedItems.length}</span>

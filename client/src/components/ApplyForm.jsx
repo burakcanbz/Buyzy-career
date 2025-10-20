@@ -110,7 +110,7 @@ const ApplyForm = ({ positionId, position }) => {
 
   return (
     <Form
-      className="w-75"
+      className="w-md-75"
       id="apply-form"
       onSubmit={handleSubmit}
       onKeyDown={handleKeyDown}
