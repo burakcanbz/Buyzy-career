@@ -110,7 +110,7 @@ export const getQueryParams = (queryParams) => {
 
 export const getQueryParamNames = (name, itemInfo) => {
   if (name === "title") {
-    return { filterQuery: "id", nameQuery: itemInfo.position.id };
+    return { filterQuery: "id", nameQuery: itemInfo.position._id };
   } else if (name === "division") {
     return { filterQuery: name, nameQuery: itemInfo.position.division };
   }

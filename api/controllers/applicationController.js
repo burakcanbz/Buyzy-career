@@ -15,12 +15,11 @@ exports.getApplications = asyncHandler(async (req, res) => {
 
 exports.getApplicationByQuery = asyncHandler(async (req, res) => {
   const { filter, name } = req.query;
-  const data = await fileReader("applications");
-  const allApplications = data.applications;
+  const allApplications = await Application.find();
 
   if (filter === "id") {
     const applications = allApplications.filter(
-      (item) => item.position[filter] === Number(name)
+      (item) => String(item.position._id) === name
     );
     return res.status(200).json({ applications });
   }
@@ -33,10 +32,9 @@ exports.getApplicationByQuery = asyncHandler(async (req, res) => {
 
 exports.getApplicationDetails = asyncHandler(async (req, res) => {
   const { id } = req.params;
-  const data = await fileReader("applications");
-  const allApplications = data.applications;
+  const allApplications = await Application.find();
   const applicationDetail = allApplications.find(
-    (item) => item.id === Number(id)
+    (item) => String(item._id) === id
   );
   if (!applicationDetail) {
     res.status(500);

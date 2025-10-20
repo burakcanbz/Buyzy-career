@@ -5,8 +5,8 @@ const { upload } = require('../utils/storage');
 
 const router = express.Router();
 
-router.route('/applications/:id').get(admin(['Owner', 'Editor', 'Viewer']), getApplications);
 router.route('/applications/tabs').get(admin(['Owner', 'Editor', 'Viewer']), getApplicationByQuery);
+router.route('/applications/:id').get(admin(['Owner', 'Editor', 'Viewer']), getApplications);
 router.route('/applications/tabs/details/:id').get(admin(['Owner', 'Editor', 'Viewer']), getApplicationDetails)
 router.route('/application-form').post(upload.array('file', 10), addApplicationForm);
 router.route('/application-form/hire').put(admin(['Owner']),updateHireStatus)
