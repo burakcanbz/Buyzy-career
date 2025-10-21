@@ -47,7 +47,7 @@ const Login = () => {
             style={{ backgroundImage: `url(${buyzy})`, backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "center", minHeight: 500 }}>
             <span className="fs-4 fw-bold text-muted">Admin Panel</span>
             <BiLogIn style={{ fontSize: 64, marginTop: 10, marginBottom: 4 }} />
-            <h1 className="fw-bold text-white">Sign In</h1>
+            <h1 className="fw-bold text-black">Sign In</h1>
             <Form onSubmit={submitHandler}>
               <Form.Group controlId="email" className="my-3">
                 <Form.Label className="fw-bold">Email Address</Form.Label>

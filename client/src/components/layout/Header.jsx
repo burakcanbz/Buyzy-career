@@ -43,7 +43,7 @@ const Header = () => {
       <Navbar
         variant="dark"
         expand="lg"
-        className="d-flex shadow-sm"
+        className="d-flex fixed-top shadow-sm"
         collapseOnSelect
         style={{
           backgroundColor: "#393D47",

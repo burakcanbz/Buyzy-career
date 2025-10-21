@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useRef } from "react";
+import React, { useState, useEffect, useLayoutEffect, useMemo, useRef } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import { calculateValues } from "../helpers/helper";
 import { useNavigate } from "react-router-dom";
@@ -12,7 +12,6 @@ import GradientButton from "../styledComponents/gradientButton";
 import PositionCard from "./PositionCard";
 
 const PositionList = () => {
-  const ref = useRef(null);
   const firstRender = useRef(true);
   const [currentPage, setCurrentPage] = useState(1);
   const { data, error, isLoading } = useGetJobItemsQuery();
@@ -34,15 +33,17 @@ const PositionList = () => {
     setCurrentPage(1);
   }, [searchedItems]);
 
-  useEffect(() => {
-    if (firstRender.current) {
-      firstRender.current = false;
-      return;
-    }
+  useLayoutEffect(() => {
+  if (firstRender.current) {
+    firstRender.current = false;
+    return;
+  }
 
-    if (ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+  window.scrollTo({ top: 0, behavior: "smooth" });
+
+  document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+  document.body.scrollTo({ top: 0, behavior: "smooth" });
+
   }, [currentPage]);
 
   const [items, totalPages, pageNumbers] = useMemo(() => {  // Avoid recalculation if any other render different than updating these parameter values.
@@ -88,7 +89,7 @@ const PositionList = () => {
     <>
     <div style={{ background: "radial-gradient(circle,  rgb(240, 240, 240),  rgb(220 220 220), rgb(235, 235, 243))"}}>
       <Container >
-        <Row className="d-flex justify-content-center" ref={ref}>
+        <Row className="d-flex justify-content-center">
           <Col className="d-flex justify-content-start align-items-center text-muted fs-5 mt-4 mb-4">
             {searchedItems?.length > 0 ? (
               <span>Open Roles: {searchedItems.length}</span>
