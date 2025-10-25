@@ -26,8 +26,7 @@ Buyzy Career is a modern career portal where candidates can explore job opportun
 #### **Editor**
 - Access limited to assigned divisions.  
 - Can view and manage applications within their divisions.  
-- Can leave feedback and hire candidates.  
-- Can edit existing positions within their divisions.  
+- Can leave feedback.  
 
 #### **Viewer**
 - Read-only access to assigned divisions.  
@@ -51,6 +50,13 @@ Buyzy Career is a modern career portal where candidates can explore job opportun
 - **File Upload:** Multer  
 - **Authentication:** JWT-based admin login  
 
+***
+You can reach the controller panel as an editor following these steps:
+https://buyzycareer.onrender.com
+
+email: jane@gmail.com
+password: buyzy!editor25
+***
 
 ## Getting Started
 
