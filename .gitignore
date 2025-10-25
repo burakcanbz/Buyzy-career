@@ -38,4 +38,4 @@ jspm_packages
 .DS_Store
 .env
 
-userTemplate.js
+api/data/userTemplate.js

@@ -2,7 +2,7 @@ const users = [
   {
     name: "Burak Canbaz",
     email: "burak@gmail.com",
-    password: "123",
+    password: "buyzyCareerAdmin25!",
     type: "Admin",
     role: "Owner",
     division: ["All Divisions"],
@@ -10,7 +10,7 @@ const users = [
   {
     name: "Test User",
     email: "test@gmail.com",
-    password: "123",
+    password: "buyzy!editor25",
     type: "Admin",
     role: "Viewer",
     division: ["All Divisions"],
@@ -18,7 +18,7 @@ const users = [
   {
     name: "Jane",
     email: "jane@gmail.com",
-    password: "123",
+    password: "buyzyCareerAdmin25",
     type: "Admin",
     role: "Editor",
     division: ["Engineering", "Recruitment", "Marketing"],
@@ -26,7 +26,7 @@ const users = [
   {
     name: "John Verdon",
     email: "verdon@gmail.com",
-    password: "123",
+    password: "buyzyCareerAdmin25",
     type: "Admin",
     role: "Viewer",
     division: ["Engineering", "Customer Support", "Data Science"],
@@ -34,7 +34,7 @@ const users = [
   {
     name: "Adam Fawer",
     email: "adam@gmail.com",
-    password: "123",
+    password: "buyzyCareerAdmin25",
     type: "Admin",
     role: "Viewer",
     division: ["Customer Support", "Engineering"],
@@ -42,7 +42,7 @@ const users = [
   {
     name: "Michael Jordan",
     email: "jordan23@gmail.com",
-    password: "123",
+    password: "buyzyCareerAdmin25",
     type: "Admin",
     role: "Editor",
     division: ["Engineering", "Customer Support"],
@@ -50,7 +50,7 @@ const users = [
   {
     name: "Larry Bird",
     email: "bird@gmail.com",
-    password: "123",
+    password: "buyzyCareerAdmin25",
     type: "Admin",
     role: "Editor",
     division: ["Engineering", "Customer Support", "Data Science"],
