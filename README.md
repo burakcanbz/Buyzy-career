@@ -5,7 +5,50 @@ iOS devices and Safari have limitations regarding cross-site cookies due to [Int
 Buyzy Career is a modern career portal where candidates can explore job opportunities and easily submit their applications. Only **Careers - Jobs page and its related pages reachable**. Other pages just added for better view.
 
 ## Features
-- 
+
+### Overview
+- **Modern Career Portal** – Candidates can browse job openings, view details, upload their resumes, and apply easily.  
+- **Application Management** – Each application is securely stored and linked to a specific division for better organization.  
+- **Admin Panel** – A dedicated `/admin-panel` route allows admins to manage positions and applications.  
+- **Secure Access** – Only predefined admins can access the panel; no public registration is available.  
+
+---
+
+### Admin Roles & Permissions
+
+#### **Owner**
+- Full access to all divisions and data.  
+- Can create, edit, delete, and update job positions.  
+- Can review applications, leave feedback, and hire candidates.  
+
+#### **Editor**
+- Access limited to assigned divisions.  
+- Can view and manage applications within their divisions.  
+- Can leave feedback and hire candidates.  
+- Can edit existing positions within their divisions.  
+
+#### **Viewer**
+- Read-only access to assigned divisions.  
+- Can view job positions and applications but cannot edit or leave feedback.  
+
+---
+
+### Additional Highlights
+- **File Upload Support** – Candidates can attach resumes or additional documents to their applications.  
+- **Division-Based Filtering** – Admins only see data related to their assigned divisions.  
+- **Role-Based UI** – Interface dynamically adapts to each admin’s permissions.  
+- **Scalable Architecture** – Codebase is modular and easy to extend for future enhancements.  
+
+---
+
+## 🧠 Tech Stack
+- **Frontend:** React, MUI, Bootstrap  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB  
+- **State Management:** Redux Toolkit 
+- **File Upload:** Multer  
+- **Authentication:** JWT-based admin login  
+
 
 ## Getting Started
 
